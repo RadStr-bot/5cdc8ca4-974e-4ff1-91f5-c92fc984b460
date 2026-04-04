@@ -1,0 +1,15 @@
+iri: 81808748-698f-47b4-9679-336acdf8443c
+projectIri: 8b2e340b-998b-49e7-ba7d-5a1122beacb1
+types:
+  - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
+userMetadata:
+  documentBaseUrl: https://op.europa.eu/documents/3938058/11669184/eli.owl/
+  label:
+    en: eli
+metadata:
+  creationDate: 2026-04-04T20:44:43.579Z
+  modificationDate: 2026-04-04T20:54:26.937Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.435Z
+_exportedBy: http://localhost:3100

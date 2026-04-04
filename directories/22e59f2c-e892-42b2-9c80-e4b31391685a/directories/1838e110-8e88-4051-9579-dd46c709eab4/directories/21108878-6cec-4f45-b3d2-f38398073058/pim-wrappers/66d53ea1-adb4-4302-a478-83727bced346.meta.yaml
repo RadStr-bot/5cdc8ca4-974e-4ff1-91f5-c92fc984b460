@@ -1,0 +1,15 @@
+iri: 218f01a7-4fb4-4289-a23e-73c5b7a94fe7
+projectIri: 66d53ea1-adb4-4302-a478-83727bced346
+types:
+  - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
+userMetadata:
+  documentBaseUrl: https://datagov-cz.github.io/cache-slovniku/foaf.ttl
+  label:
+    en: foaf
+metadata:
+  creationDate: 2026-04-04T20:44:39.622Z
+  modificationDate: 2026-04-04T20:54:25.134Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.424Z
+_exportedBy: http://localhost:3100

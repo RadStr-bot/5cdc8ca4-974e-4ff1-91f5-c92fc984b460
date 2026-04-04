@@ -1,0 +1,15 @@
+iri: 96d5bedd-de81-417d-9152-c44f7de0b314
+projectIri: 8afe6ed3-5876-48ab-baf7-47f534692550
+types:
+  - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
+userMetadata:
+  documentBaseUrl: https://datagov-cz.github.io/cache-slovniku/spdx-ontology.2.3.1.ttl
+  label:
+    en: spdx-ontology
+metadata:
+  creationDate: 2026-04-04T20:44:41.386Z
+  modificationDate: 2026-04-04T20:54:26.277Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.431Z
+_exportedBy: http://localhost:3100

@@ -1,0 +1,15 @@
+iri: a0eb2924-d486-4fd2-8628-d5de6c02b2ce
+projectIri: 142eac75-8e21-44a7-8009-7f9b6ff27b33
+types:
+  - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
+userMetadata:
+  documentBaseUrl: https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/voc/core-location-ap.ttl
+  label:
+    en: core-location-ap
+metadata:
+  creationDate: 2026-04-04T20:44:48.212Z
+  modificationDate: 2026-04-04T20:54:29.675Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.470Z
+_exportedBy: http://localhost:3100

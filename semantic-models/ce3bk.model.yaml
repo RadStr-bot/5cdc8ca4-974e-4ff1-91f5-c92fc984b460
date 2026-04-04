@@ -1,0 +1,42 @@
+type: http://dataspecer.com/resources/local/semantic-model
+modelId: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+modelAlias: moje
+baseIri: https://example.com/ce3bk/#
+entities:
+  0w60qwe8usnmmshu1ve:
+    iri: terribleMan
+    name:
+      en: Terrible Man
+    description: {}
+    externalDocumentationUrl: null
+    id: 0w60qwe8usnmmshu1ve
+    type:
+      - class
+  wk85gf2midmmshuryu:
+    iri: chubbyService
+    name:
+      en: Chubby Service
+    description: {}
+    externalDocumentationUrl: null
+    id: wk85gf2midmmshuryu
+    type:
+      - class
+  67u6njnabvimmshv3zi:
+    ends:
+      - iri: null
+        name: {}
+        description: {}
+        concept: wk85gf2midmmshuryu
+        externalDocumentationUrl: null
+      - name:
+          en: Extensive Work
+        description: {}
+        concept: 0w60qwe8usnmmshu1ve
+        iri: extensiveWork
+        externalDocumentationUrl: null
+    id: 67u6njnabvimmshv3zi
+    type:
+      - relationship
+    iri: null
+    name: {}
+    description: {}

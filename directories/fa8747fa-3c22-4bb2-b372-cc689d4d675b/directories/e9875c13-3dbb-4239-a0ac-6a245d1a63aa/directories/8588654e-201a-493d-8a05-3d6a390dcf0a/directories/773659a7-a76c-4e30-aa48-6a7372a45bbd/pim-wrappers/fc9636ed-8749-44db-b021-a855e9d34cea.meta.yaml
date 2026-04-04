@@ -1,0 +1,15 @@
+iri: bd186f03-2834-44dd-9f96-f895b6f07a7c
+projectIri: fc9636ed-8749-44db-b021-a855e9d34cea
+types:
+  - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
+userMetadata:
+  documentBaseUrl: https://datagov-cz.github.io/cache-slovniku/time.ttl
+  label:
+    en: time
+metadata:
+  creationDate: 2026-04-04T20:44:51.584Z
+  modificationDate: 2026-04-04T20:54:31.455Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.484Z
+_exportedBy: http://localhost:3100

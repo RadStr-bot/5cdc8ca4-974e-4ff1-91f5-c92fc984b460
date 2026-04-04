@@ -1,0 +1,15 @@
+iri: 883c4070-aaa7-4b3e-b7e1-f3d8a7265d14
+projectIri: 7a14f2de-5688-4ec9-a25f-1dbae2a477f5
+types:
+  - http://dataspecer.com/resources/local/semantic-model
+userMetadata:
+  label:
+    en: DCAT-AP HVD 3.0.0
+  documentBaseUrl: https://mff-uk.github.io/specifications/dcat-ap-hvd/
+metadata:
+  creationDate: 2026-04-04T20:44:45.490Z
+  modificationDate: 2026-04-04T20:54:27.494Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.444Z
+_exportedBy: http://localhost:3100

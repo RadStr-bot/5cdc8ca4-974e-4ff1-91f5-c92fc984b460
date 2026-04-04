@@ -1,0 +1,15 @@
+iri: 8daf86b6-b72e-4767-97e9-9cf22a491703
+projectIri: ecc74e1a-26cb-47a7-b3ee-fc613f3b6de9
+types:
+  - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
+userMetadata:
+  documentBaseUrl: https://www.w3.org/ns/legacy_adms
+  label:
+    en: legacy_adms
+metadata:
+  creationDate: 2026-04-04T20:44:51.053Z
+  modificationDate: 2026-04-04T20:54:31.133Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.481Z
+_exportedBy: http://localhost:3100

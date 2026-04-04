@@ -1,0 +1,15 @@
+iri: f45d0817-829c-44bf-af68-9ac8be580abd
+projectIri: 1c1e9697-6ed3-4f63-9742-923ab368e80f
+types:
+  - http://dataspecer.com/resources/local/semantic-model
+userMetadata:
+  label:
+    en: "DCAT-AP-CZ: Datové sady otevřených dat"
+  documentBaseUrl: https://ofn.gov.cz/dcat-ap-cz-otevřená-data/draft/cs/
+metadata:
+  creationDate: 2026-04-04T20:44:55.155Z
+  modificationDate: 2026-04-04T20:54:32.484Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.494Z
+_exportedBy: http://localhost:3100

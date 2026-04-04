@@ -1,0 +1,305 @@
+identifier: 304e703f-3cbd-4ece-8b23-fb40cf78103a
+version: 1
+type: http://dataspecer.com/resources/local/visual-model
+entities:
+  - identifier: 560e3ae0-8cdf-4b51-89ec-bc9c41564b6f-model-metadata-entity
+    type:
+      - entity-model-type
+    label:
+      en: "DCAT-AP-CZ: High-Value Datasets"
+      cs: "DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)"
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: yl7okomh8nmke21fm0
+    position:
+      x: 2020
+      y: 950
+      anchored: null
+    content:
+      - ea1leclfx7rmke21gdl
+      - 9ccpdwp2anmke21gdl
+      - mxjvr2eq7hkmke21gdl
+      - q4s9jt8j71bmke21gdl
+      - rjbxpmmtm9emke21gdl
+    visualModels: []
+    type:
+      - visual-node
+    identifier: 247og
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: 4ql0akde4lymke21fm0
+    position:
+      x: 1530
+      y: 950
+      anchored: null
+    content:
+      - ow24hpfpl4imke21gdl
+      - cfd4m2kog0tmkpkhgu0
+      - nbeekmvk8cemke21gdl
+      - skb9pc3t4uemke21gdl
+      - 45ca6ie3dxrmke21gdl
+    visualModels: []
+    type:
+      - visual-node
+    identifier: fyxbfl
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: 0fhh7c3vmfxmke21fm0
+    position:
+      x: 2550
+      y: 670
+      anchored: null
+    content:
+      - lv3zsf2ap2smke21gdl
+      - xtwz1zc34mke21gdl
+      - 3y2iyil0hwtmke21gdl
+      - npv8njn2nlsmke21gdl
+    visualModels: []
+    type:
+      - visual-node
+    identifier: zliwk
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: ah3xwvwfsvtmke21fm0
+    position:
+      x: 2020
+      y: 1410
+      anchored: null
+    content:
+      - rg73eb5v1tmke21gdl
+      - 28cvi5dazupmke21gdl
+    visualModels: []
+    type:
+      - visual-node
+    identifier: dg2t1
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: zel3qia7aqlmke21gdl
+    waypoints: []
+    visualSource: 247og
+    visualTarget: dg2t1
+    type:
+      - visual-relationship
+    identifier: 5p6yi
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: l36aribzwgmke21fm0
+    position:
+      x: 1380
+      y: 1670
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: vdnqr
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: q6gooiipoekmke21gdl
+    waypoints: []
+    visualSource: vdnqr
+    visualTarget: fyxbfl
+    type:
+      - visual-relationship
+    identifier: y6y46
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: f8kftaq3sznmke21hbt
+    waypoints: []
+    visualSource: vdnqr
+    visualTarget: dg2t1
+    type:
+      - visual-relationship
+    identifier: ps7sm
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: 9rus9qdsi2amke21fm0
+    position:
+      x: 2410
+      y: 1670
+      anchored: null
+    content:
+      - 02o31u8olju6mke21gdl
+      - iglpr4klbj8mke21gdl
+    visualModels: []
+    type:
+      - visual-node
+    identifier: u5ekf
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: uosfxc7z2ismke21hbt
+    waypoints: []
+    visualSource: u5ekf
+    visualTarget: dg2t1
+    type:
+      - visual-relationship
+    identifier: pc6i1
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: nzt51wot6dmke21fm0
+    position:
+      x: 1380
+      y: 1860
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: olzui
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: e09wtdqevbsmke21gdl
+    waypoints: []
+    visualSource: dg2t1
+    visualTarget: olzui
+    type:
+      - visual-relationship
+    identifier: rubwx
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: gcdmqeetnskmke21fm0
+    position:
+      x: 3000
+      y: 1320
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: ztcgs
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: vzm8fgbytdmmke21fm0
+    position:
+      x: 2620
+      y: 1320
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: cz23gj
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: sblnhao9fwmke21fm0
+    position:
+      x: 2700
+      y: 990
+      anchored: null
+    content:
+      - m4lwp4fc8ogmke21gdl
+      - id8xlwf5h5bmke21gdl
+      - qd7mv452nknmkpkel5l
+    visualModels: []
+    type:
+      - visual-node
+    identifier: ez5ho
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: bzzc8hin8rnmke21hbt
+    waypoints: []
+    visualSource: cz23gj
+    visualTarget: ez5ho
+    type:
+      - visual-relationship
+    identifier: 8odb
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: gkjuy6f8i7hmke21hbt
+    waypoints: []
+    visualSource: ztcgs
+    visualTarget: ez5ho
+    type:
+      - visual-relationship
+    identifier: 9obhf
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: mgl0s4z5bxkmkpk27wp
+    position:
+      x: 1760
+      y: 670
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: zq2yci
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: x428l4zgvvrmkpk7xhh
+    waypoints: []
+    visualSource: 247og
+    visualTarget: zq2yci
+    type:
+      - visual-relationship
+    identifier: 1si85l
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: tm7v6gbri5mkpk8z55
+    waypoints: []
+    visualSource: zliwk
+    visualTarget: zq2yci
+    type:
+      - visual-relationship
+    identifier: q3y2q
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: wtml0jmk3dmkpk9suj
+    waypoints: []
+    visualSource: fyxbfl
+    visualTarget: zq2yci
+    type:
+      - visual-relationship
+    identifier: z2yqsh
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedEntity: xnnyc3idphmkpkokub
+    position:
+      x: 2050
+      y: 2080
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: b9eje
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: we2l7lgqx9mkpkqy5l
+    waypoints: []
+    visualSource: olzui
+    visualTarget: b9eje
+    type:
+      - visual-relationship
+    identifier: 4jmall
+  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+    representedRelationship: h0j6xc8tb4qmkpkt84y
+    waypoints: []
+    visualSource: olzui
+    visualTarget: b9eje
+    type:
+      - visual-relationship
+    identifier: d3zzx
+  - type:
+      - http://dataspecer.com/resources/local/visual-model
+    representedModel: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+    color: "#ff848b"
+    identifier: ug2at
+  - model: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+    representedEntity: 0w60qwe8usnmmshu1ve
+    position:
+      x: 1140
+      y: 350
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: 649hff
+  - model: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+    representedEntity: 0w60qwe8usnmmshu1ve
+    position:
+      x: 1570
+      y: 350
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: wxcgw
+  - model: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+    representedEntity: wk85gf2midmmshuryu
+    position:
+      x: 1420
+      y: 570
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: 36hgh
+  - model: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+    representedRelationship: 67u6njnabvimmshv3zi
+    waypoints: []
+    visualSource: 36hgh
+    visualTarget: wxcgw
+    type:
+      - visual-relationship
+    identifier: rq02m

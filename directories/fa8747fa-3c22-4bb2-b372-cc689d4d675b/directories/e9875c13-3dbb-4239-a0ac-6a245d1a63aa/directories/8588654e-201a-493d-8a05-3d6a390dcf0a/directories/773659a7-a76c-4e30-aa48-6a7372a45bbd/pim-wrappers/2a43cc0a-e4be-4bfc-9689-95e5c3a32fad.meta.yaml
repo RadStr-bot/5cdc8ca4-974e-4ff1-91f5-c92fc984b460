@@ -1,0 +1,15 @@
+iri: a309cf82-b9a3-4746-b6dd-521c92b2913d
+projectIri: 2a43cc0a-e4be-4bfc-9689-95e5c3a32fad
+types:
+  - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
+userMetadata:
+  documentBaseUrl: https://datagov-cz.github.io/cache-slovniku/rdfs.ttl
+  label:
+    en: rdfs
+metadata:
+  creationDate: 2026-04-04T20:44:48.785Z
+  modificationDate: 2026-04-04T20:54:29.995Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.473Z
+_exportedBy: http://localhost:3100

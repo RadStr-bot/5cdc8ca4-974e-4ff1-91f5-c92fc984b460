@@ -1,0 +1,1486 @@
+configuration:
+  http://dataspecer.com/resources/local/layout-configuration:
+    main:
+      none:
+        layout_alg: none
+        run_layered_after: false
+        run_node_overlap_removal_after: false
+        interactive: false
+      elk_stress:
+        layout_alg: elk_stress
+        stress_edge_len: 800
+        number_of_new_algorithm_runs: 10
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: true
+        interactive: false
+      elk_layered:
+        layout_alg: elk_layered
+        alg_direction: UP
+        layer_gap: 200
+        in_layer_gap: 100
+        edge_routing: ORTHOGONAL
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: false
+        interactive: false
+      elk_force:
+        layout_alg: elk_force
+        min_distance_between_nodes: 400
+        force_alg_type: FRUCHTERMAN_REINGOLD
+        number_of_new_algorithm_runs: 10
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: true
+        interactive: false
+      random:
+        layout_alg: random
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: true
+        interactive: false
+      elk_radial:
+        layout_alg: elk_radial
+        min_distance_between_nodes: 500
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: false
+        interactive: false
+      elk_overlapRemoval:
+        layout_alg: elk_overlapRemoval
+        min_distance_between_nodes: 200
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: false
+        interactive: true
+      elk_stress_advanced_using_clusters:
+        layout_alg: elk_stress_advanced_using_clusters
+        stress_edge_len: 800
+        number_of_new_algorithm_runs: 10
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: true
+        interactive: false
+      elk_stress_profile:
+        layout_alg: elk_stress_profile
+        profileEdgeLength: 400
+        preferredProfileDirection: UP
+        stress_edge_len: 800
+        number_of_new_algorithm_runs: 10
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: true
+        interactive: false
+      automatic:
+        layout_alg: automatic
+        min_distance_between_nodes: 500
+        number_of_new_algorithm_runs: 1
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: false
+        interactive: false
+    general:
+      none:
+        layout_alg: none
+        run_layered_after: false
+        run_node_overlap_removal_after: false
+        interactive: false
+      elk_stress:
+        layout_alg: elk_stress
+        stress_edge_len: 800
+        number_of_new_algorithm_runs: 10
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: true
+        interactive: false
+      elk_layered:
+        layout_alg: elk_layered
+        alg_direction: UP
+        layer_gap: 200
+        in_layer_gap: 100
+        edge_routing: ORTHOGONAL
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: false
+        interactive: false
+      elk_force:
+        layout_alg: elk_force
+        min_distance_between_nodes: 400
+        force_alg_type: FRUCHTERMAN_REINGOLD
+        number_of_new_algorithm_runs: 10
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: true
+        interactive: false
+      random:
+        layout_alg: random
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: true
+        interactive: false
+      elk_radial:
+        layout_alg: elk_radial
+        min_distance_between_nodes: 500
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: false
+        interactive: false
+      elk_overlapRemoval:
+        layout_alg: elk_overlapRemoval
+        min_distance_between_nodes: 200
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: false
+        interactive: true
+      elk_stress_advanced_using_clusters:
+        layout_alg: elk_stress_advanced_using_clusters
+        stress_edge_len: 800
+        number_of_new_algorithm_runs: 10
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: true
+        interactive: false
+      elk_stress_profile:
+        layout_alg: elk_stress_profile
+        profileEdgeLength: 400
+        preferredProfileDirection: UP
+        stress_edge_len: 800
+        number_of_new_algorithm_runs: 10
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: true
+        interactive: false
+      automatic:
+        layout_alg: automatic
+        min_distance_between_nodes: 500
+        number_of_new_algorithm_runs: 1
+        advanced_settings: {}
+        run_layered_after: false
+        run_node_overlap_removal_after: false
+        interactive: false
+    chosenMainAlgorithm: elk_layered
+    chosenGeneralAlgorithm: none
+    additionalSteps: {}
+  https://schemas.dataspecer.com/documentation-generator-config/:
+    partials:
+      specification: >-
+        {{> definitions}}
+
+        <!DOCTYPE html>
+
+        <html {{#iflng "cs"}}lang="cs"{{lng}}lang="en"{{/iflng}}>
+          <head>
+            {{> html-head}}
+          </head>
+          <body>
+            <p class="copyright"></p>
+            {{> abstract}}
+
+            {{> introduction}}
+
+            <section>
+              <h2>{{#iflng "cs"}}Přehled{{lng}}Overview{{/iflng}}</h2>
+
+              {{#each externalArtifacts.svg}}
+                <a href="{{{relativePath URL}}}">
+                  <figure>
+                    <img src="{{{relativePath URL}}}" alt="{{translate ./label}}" />
+                    <figcaption>{{translate ./label}}</figcaption>
+                  </figure>
+                </a>
+              {{/each}}
+            </section>
+
+            {{#structureModels}}
+              <section>
+              <h2>
+                {{#iflng "cs"}}Specifikace struktury pro{{lng}}Data structure specification for{{/iflng}}
+                {{translate humanLabel}}
+              </h2>
+              <p>{{translate humanDescription}}</p>
+
+              {{#artifacts}}{{#getDocumentation}}{{> (useTemplate)}}{{/getDocumentation}}{{/artifacts}}
+              </section>
+            {{/structureModels}}
+
+            {{> applicable-legislation}}
+            
+            {{> examples}}
+            
+            {{> used-prefixes}}
+
+                {{#if classProfilesByTags.[https://w3id.org/dsv/class-role#main]}}
+              <section>
+                <h2>{{#iflng "cs"}}Hlavní profily tříd{{lng}}Main class profiles{{/iflng}}</h2>
+
+                {{#each classProfilesByTags.[https://w3id.org/dsv/class-role#main]}}
+                  {{> class-profile}}
+                {{/each}}
+              </section>
+            {{/if}}
+
+            {{#if classProfilesByTags.[https://w3id.org/dsv/class-role#supportive]}}
+              <section>
+                <h2>{{#iflng "cs"}}Podpůrné profily třídy{{lng}}Supportive class profiles{{/iflng}}</h2>
+
+                {{#each classProfilesByTags.[https://w3id.org/dsv/class-role#supportive]}}
+                  {{> class-profile}}
+                {{/each}}
+              </section>
+            {{/if}}
+
+            {{#if (non-empty classProfilesByTags.default)}}
+              <section>
+                {{#if (or classProfilesByTags.[https://w3id.org/dsv/class-role#main] classProfilesByTags.[https://w3id.org/dsv/class-role#supportive])}}
+                  <h2>{{#iflng "cs"}}Nezařazené profily tříd{{lng}}Other class profiles{{/iflng}}</h2>
+                {{else}}
+                  <h2>{{#iflng "cs"}}Profily tříd{{lng}}Class profiles{{/iflng}}</h2>
+                {{/if}}
+
+                {{#each classProfilesByTags.default}}
+                  {{> class-profile}}
+                {{/each}}
+              </section>
+            {{/if}}
+
+            {{#if semanticEntitiesByType.classes}}
+              <section>
+                <h2>{{#iflng "cs"}}Třídy{{lng}}Classes{{/iflng}}</h2>
+
+                {{#each locallyDefinedSemanticEntity}}
+                  {{#ifEquals type.[0] "class"}}
+                    {{> semantic-model-class}}
+                  {{/ifEquals}}
+                {{/each}}
+              </section>
+            {{/if}}
+
+            {{#if semanticEntitiesByType.relationships}}
+              <section>
+                <h2>{{#iflng "cs"}}Vlastnosti{{lng}}Properties{{/iflng}}</h2>
+                {{#each locallyDefinedSemanticEntity}}
+                  {{#ifEquals type.[0] "relationship"}}
+                    {{> semantic-model-relationship}}
+                  {{/ifEquals}}
+                {{/each}}
+              </section>
+            {{/if}}
+
+            {{> attachments}}
+
+            {{> acks}}
+          </body>
+        </html>
+      abstract: >-
+        <section id="abstract">
+          <h2>Abstrakt</h2>
+          <p>
+              Cílem tohoto dokumentu je specifikovat záznam datové sady s vysokou hodnotou (HVD) v lokálním katalogu dat (LKD) pro jeho harvestování Národním katalogem dat (NKD) dle <a href="../../../dcat-ap-cz-rozhraní-katalogů-dat">DCAT-AP-CZ: Rozhraní katalogů dat</a>, a je založen na OFN pro záznam datové sady otevřených dat <a href="../../../dcat-ap-cz-otevřená-data/">DCAT-AP-CZ: Datové sady otevřených dat</a>.
+          </p>
+        </section>
+      acks: "<section id=\"poděkování\">\r
+
+        \  <h2>Poděkování</h2>\r
+
+        \  <p>\r
+
+        \      Tato otevřená formální norma byla rozvíjena v rámci projektu
+        Rozvoj Národního katalogu otevřených dat a infrastruktury Veřejného
+        datového fondu <a
+        href=\"https://stage.dia.gov.cz/egovernment/projekty-fondy-eu/rozvoj-na\
+        rodniho-katalogu-otevrenych-dat-nkod-a-infrastruktury-verejneho-datoveh\
+        o-fondu/\">CZ.31.1.0/0.0/0.0/22_050/0007986</a> z nástroje Evropské Unie
+        NextGenerationEU prostřednictvím Národního plánu obnovy.\r
+
+        \  </p>\r
+
+        </section>"
+      applicable-legislation: "<section id=\"příslušné-právní-předpisy\">\r
+
+        \  <h2>Příslušné právní předpisy</h2>\r
+
+        \r
+
+        \  <p>\r
+
+        \    <a href=\"#DatováSada.příslušnýPrávníPředpis\">Datová sada či
+        jejich série</a>, <a
+        href=\"#Distribuce.příslušnýPrávníPředpis\">Distribuce datové sady</a> a
+        <a href=\"#DatováSlužba.příslušnýPrávníPředpis\">Datové služby</a> se
+        označují příslušnými právními předpisy, které předepisují jejich
+        vznik.\r
+
+        \    Předpisy jsou identifikovény svými <a
+        href=\"https://eur-lex.europa.eu/content/help/eurlex-content/eli.html?l\
+        ocale=cs\">ELI</a>.\r
+
+        \    Pro datové sady s vysokou socio-ekonomickou hodnotou je navíc k
+        označení indikující otevřená data povinné označit datovou sadu, její HVD
+        distribuci (nikoliv každou distribuci) a příslušnou HVD datovou službu
+        pomocí ELI prováděcího nařízení:\r
+
+        \  </p>\r
+
+        \r
+
+        \  <ul>\r
+
+        \      <li>Pro označení otevřených dat:
+        <code>http://data.europa.eu/eli/dir/2019/1024/oj</code></li>\r
+
+        \      <li>Pro označení dat s vysokou socio-ekonomickou hodnotou (HVD):
+        <code>http://data.europa.eu/eli/reg_impl/2023/138/oj</code></li>\r
+
+        \  </ul>\r
+
+        \  \r
+
+        </section>"
+      examples: "<section id=\"příklady\">\r
+
+        \    <h2>Příklady</h2>\r
+
+        \r
+
+        \    <p>\r
+
+        \        Tato sekce obsahuje příklady datové sady a série datových
+        sad.\r
+
+        \    </p>\r
+
+        \r
+
+        \    <p>\r
+
+        \        Příklady obsahují i příslušná JSON schémata pro validaci
+        souborů ve variantě JSON-LD.\r
+
+        \    </p>\r
+
+        \        \r
+
+        \    <section id=\"hvds-dcat-ap-dokumenty-datová-sada-hvd\">\r
+
+        \    <h3>Soubor datové sady HVD</h3>\r
+
+        \    \r
+
+        \    <p>\r
+
+        \        Na URL specifikovaných v souboru katalogu pak NKOD očekává
+        soubory v RDF serializaci <a
+        href=\"../../propojená-data/#serializace-RDF-Turtle\">Turtle</a> či <a
+        href=\"../../propojená-data/#serializace-JSON-LD\">JSON-LD</a>
+        obsahující kompletní metadatový záznam datové sady, včetně distribucí.\r
+
+        \        Pro HVD je třeba specifikovat nejen že na datovou sadu se
+        vztahuje <a
+        href=\"https://eur-lex.europa.eu/eli/reg_impl/2023/138/oj?locale=cs#\">\
+        prováděcí nařízení HVD</a>, ale i na které její distribuce a datové
+        služby, jelikož to nemusí být na všechny.\r
+
+        \        V každém případě je to indikováno pomocí hodnoty
+        <code>dcatap:applicableLegislation</code> (RDF Turtle) či
+        <code>právní_předpis</code> (JSON-LD) s hodnotou
+        <code>http://data.europa.eu/eli/reg_impl/2023/138/oj</code>.\r
+
+        \    </p>\r
+
+        \    \r
+
+        \    <aside class=\"example\" title=\"Vzorový soubor s metadaty datové
+        sady HVD v RDF Turtle\">\r
+
+        \        <p>\r
+
+        \            <a href=\"../příklady/datová-sada-hvd.ttl\">Stáhnout RDF
+        Turtle</a>.\r
+
+        \            Umístěno na URL
+        <code>https://data.gov.cz/lkod/mdcr/datové-sady/vld</code>.\r
+
+        \        </p>\r
+
+        \        <pre class=\"turtle\">\r
+
+        @prefix continent:
+        &lt;http://publications.europa.eu/resource/authority/continent/&gt; .\r
+
+        @prefix dcat: &lt;http://www.w3.org/ns/dcat#&gt; .\r
+
+        @prefix dcatap: &lt;http://data.europa.eu/r5r/&gt; .\r
+
+        @prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .\r
+
+        @prefix eurovoc: &lt;http://eurovoc.europa.eu/&gt; .\r
+
+        @prefix file-type:
+        &lt;http://publications.europa.eu/resource/authority/file-type/&gt; .\r
+
+        @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .\r
+
+        @prefix frequency:
+        &lt;http://publications.europa.eu/resource/authority/frequency/&gt; .\r
+
+        @prefix ovm:
+        &lt;https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/&gt;
+        .\r
+
+        @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .\r
+
+        @prefix themes:
+        &lt;http://publications.europa.eu/resource/authority/data-theme/&gt; .\r
+
+        @prefix vcard: &lt;http://www.w3.org/2006/vcard/ns#&gt; .\r
+
+        @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .\r
+
+        \r
+
+        &lt;https://data.gov.cz/lkod/mdcr/datové-sady/vld&gt; a dcat:Dataset;\r
+
+        \  dcterms:title \"Jízdní řády veřejné linkové dopravy (HVD)\"@cs,\r
+
+        \    \"Public transport timetables (HVD)\"@en;\r
+
+        \  dcatap:applicableLegislation
+        &lt;http://data.europa.eu/eli/dir/2019/1024/oj&gt;,\r
+
+        \    &lt;http://data.europa.eu/eli/reg_impl/2023/138/oj&gt;;\r
+
+        \  dcatap:hvdCategory &lt;http://data.europa.eu/bna/c_1e787364&gt;;\r
+
+        \  dcterms:accrualPeriodicity frequency:WEEKLY_3;\r
+
+        \  dcterms:conformsTo
+        &lt;https://ofn.gov.cz/jízdní-řády/2020-05-01/&gt;;\r
+
+        \  dcterms:description \"Obsahem datové sady jsou schválené a aktuálně
+        platné jízdní řády veřejné linkové dopravy postoupené do Celostátního
+        informačního systému o jízdních řádech ve strojově zpracovatelném
+        formátu.\"@cs,\r
+
+        \    \"This dataset contains approved timetables and timetables in
+        effect for public transport entered into the state-wide timetable
+        information system.\"@en;\r
+
+        \  dcterms:publisher ovm:66003008;\r
+
+        \  dcterms:spatial continent:EUROPE,\r
+
+        \    &lt;https://linked.cuzk.cz/resource/ruian/stat/1&gt;;\r
+
+        \  dcterms:temporal [\r
+
+        \    a dcterms:PeriodOfTime;\r
+
+        \    dcat:endDate \"2017-12-31\"^^xsd:date;\r
+
+        \    dcat:startDate \"2009-01-01\"^^xsd:date\r
+
+        \  ];\r
+
+        \  dcat:contactPoint [\r
+
+        \    a vcard:Organization;\r
+
+        \    vcard:fn \"Ministerstvo dopravy, Odbor veřejné dopravy\"@cs,\r
+
+        \      \"Ministry of Transport\"@en;\r
+
+        \    vcard:hasEmail &lt;mailto:sekretariat.190@mdcr.cz&gt;\r
+
+        \  ];\r
+
+        \  dcat:distribution
+        &lt;https://data.gov.cz/lkod/mdcr/datové-sady/vld/distribuce/csv&gt;,\r
+
+        \    &lt;https://data.gov.cz/lkod/mdcr/datové-sady/vld/distribuce/sparq\
+        l&gt;;\r
+
+        \  dcat:keyword \"jízdní řády\"@cs,\r
+
+        \    \"veřejná linková doprava\"@cs,\r
+
+        \    \"autobus\"@cs,\r
+
+        \    \"timetable\"@en,\r
+
+        \    \"public transport\"@en,\r
+
+        \    \"bus\"@en;\r
+
+        \  dcat:spatialResolutionInMeters 12.0;\r
+
+        \  dcat:temporalResolution \"P1D\"^^xsd:duration;\r
+
+        \  dcat:theme themes:TRAN,\r
+
+        \    eurovoc:4512;\r
+
+        \  foaf:page
+        &lt;https://www.mdcr.cz/Dokumenty/Verejna-doprava/Jizdni-rady,-kalendar\
+        e-pro-jizdni-rady,-metodi-(1)/Jizdni-rady-verejne-dopravy&gt; .\r
+
+        \r
+
+        &lt;https://data.gov.cz/lkod/mdcr/datové-sady/vld/distribuce/csv&gt; a
+        dcat:Distribution;\r
+
+        \  dcterms:title \"JSON distribution in ZIP file - not HVD\"@en,\r
+
+        \    \"JSON distribuce v ZIP soubrou - toto není HVD distribuce\"@cs;\r
+
+        \  dcatap:applicableLegislation
+        &lt;http://data.europa.eu/eli/dir/2019/1024/oj&gt;;\r
+
+        \  dcterms:conformsTo
+        &lt;https://portal.cisjr.cz/schemata/json-schema.json&gt;;\r
+
+        \  dcterms:format file-type:ZIP;\r
+
+        \  dcat:accessURL
+        &lt;https://portal.cisjr.cz/pub/draha/mestske/JDF.zip&gt;;\r
+
+        \  dcat:compressFormat
+        &lt;http://www.iana.org/assignments/media-types/application/zip&gt;;\r
+
+        \  dcat:downloadURL
+        &lt;https://portal.cisjr.cz/pub/draha/mestske/JDF.zip&gt;;\r
+
+        \  dcat:mediaType
+        &lt;http://www.iana.org/assignments/media-types/application/json&gt;;\r
+
+        \  dcat:packageFormat
+        &lt;http://www.iana.org/assignments/media-types/application/zip&gt;;\r
+
+        \  &lt;https://data.gov.cz/slovník/podmínky-užití/specifikace&gt; [\r
+
+        \    a &lt;https://data.gov.cz/slovník/podmínky-užití/Specifikace&gt;;\r
+
+        \    &lt;https://data.gov.cz/slovník/podmínky-užití/autor&gt;
+        \"Ministerstvo dopravy, Odbor veřejné dopravy\"@cs;\r
+
+        \    &lt;https://data.gov.cz/slovník/podmínky-užití/autor-databáze&gt;
+        \"Ministerstvo dopravy, Odbor veřejné dopravy\"@cs;\r
+
+        \    &lt;https://data.gov.cz/slovník/podmínky-užití/autorské-dílo&gt;
+        &lt;https://creativecommons.org/licenses/by/4.0/&gt;;\r
+
+        \    &lt;https://data.gov.cz/slovník/podmínky-užití/databáze-chráněná-z\
+        vláštními-právy&gt;
+        &lt;https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-p\
+        ořizovatele-databáze/&gt;;\r
+
+        \    &lt;https://data.gov.cz/slovník/podmínky-užití/databáze-jako-autor\
+        ské-dílo&gt; &lt;https://creativecommons.org/licenses/by/4.0/&gt;;\r
+
+        \    &lt;https://data.gov.cz/slovník/podmínky-užití/osobní-údaje&gt;
+        &lt;https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/&gt;\r
+
+        \  ] .\r
+
+        \r
+
+        &lt;https://data.gov.cz/lkod/mdcr/datové-sady/vld/distribuce/sparql&gt;
+        a dcat:Distribution;\r
+
+        \  dcterms:title \"SPARQL endpoint for timetables - HVD\"@en,\r
+
+        \    \"SPARQL endpoint pro jízdní řády - HVD\"@cs;\r
+
+        \  dcatap:applicableLegislation
+        &lt;http://data.europa.eu/eli/dir/2019/1024/oj&gt;,\r
+
+        \    &lt;http://data.europa.eu/eli/reg_impl/2023/138/oj&gt;;\r
+
+        \  dcat:accessService
+        &lt;https://data.gov.cz/lkod/mdcr/datové-sady/vld/služba/sparql&gt;;\r
+
+        \  dcat:accessURL &lt;https://portal.cisjr.cz/sparql&gt;;\r
+
+        \  &lt;https://data.gov.cz/slovník/podmínky-užití/specifikace&gt; [\r
+
+        \    a &lt;https://data.gov.cz/slovník/podmínky-užití/Specifikace&gt;;\r
+
+        \    &lt;https://data.gov.cz/slovník/podmínky-užití/autorské-dílo&gt;
+        &lt;https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/&gt;;\r
+
+        \    &lt;https://data.gov.cz/slovník/podmínky-užití/databáze-chráněná-z\
+        vláštními-právy&gt;
+        &lt;https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-p\
+        ořizovatele-databáze/&gt;;\r
+
+        \    &lt;https://data.gov.cz/slovník/podmínky-užití/databáze-jako-autor\
+        ské-dílo&gt;
+        &lt;https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-da\
+        tabází/&gt;;\r
+
+        \    &lt;https://data.gov.cz/slovník/podmínky-užití/osobní-údaje&gt;
+        &lt;https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/&gt;\r
+
+        \  ] .\r
+
+        \r
+
+        &lt;https://data.gov.cz/lkod/mdcr/datové-sady/vld/služba/sparql&gt; a
+        dcat:DataService;\r
+
+        \  dcterms:title \"SPARQL endpoint pro jízdní řády - HVD\"@cs,\r
+
+        \    \"SPARQL endpoint for timetables - HVD\"@en;\r
+
+        \  dcatap:applicableLegislation
+        &lt;http://data.europa.eu/eli/dir/2019/1024/oj&gt;,\r
+
+        \    &lt;http://data.europa.eu/eli/reg_impl/2023/138/oj&gt;;\r
+
+        \  dcatap:hvdCategory &lt;http://data.europa.eu/bna/c_1e787364&gt;;\r
+
+        \  dcterms:conformsTo
+        &lt;https://www.w3.org/TR/sparql11-protocol/&gt;;\r
+
+        \  dcat:contactPoint [\r
+
+        \    a vcard:Organization;\r
+
+        \    vcard:fn \"Ministerstvo dopravy, Odbor veřejné dopravy\"@cs,\r
+
+        \      \"Ministry of Transport\"@en;\r
+
+        \    vcard:hasEmail &lt;mailto:sekretariat.190@mdcr.cz&gt;\r
+
+        \  ];\r
+
+        \  dcat:endpointDescription &lt;https://portal.cisjr.cz/sparql&gt;;\r
+
+        \  dcat:endpointURL &lt;https://portal.cisjr.cz/sparql&gt;;\r
+
+        \  foaf:page &lt;https://www.data.cz/služba/dokumentace&gt; .</pre>\r
+
+        \                    </aside>\r
+
+        \    \r
+
+        \                    <aside class=\"example\" title=\"Vzorový soubor s
+        metadaty datové sady HVD v JSON-LD\">\r
+
+        \                        <p>\r
+
+        \                            <a
+        href=\"../příklady/datová-sada-hvd.jsonld\">JSON-LD</a>, <a
+        href=\"../datová-sada/schéma.json\">JSON schéma</a>, <a
+        href=\"../datová-sada/kontext.jsonld\">JSON-LD kontext</a>.\r
+
+        \                            Umístěno na URL
+        <code>https://data.gov.cz/lkod/mdcr/datové-sady/vld</code>.\r
+
+        \                        </p>\r
+
+        \                        <pre class=\"json\">\r
+
+        {\r
+
+        \    \"@context\":
+        \"https://ofn.gov.cz/dcat-ap-cz-hvd/draft/datová-sada/kontext.jsonld\",\
+        \r
+
+        \    \"iri\": \"https://data.gov.cz/lkod/mdcr/datové-sady/vld\",\r
+
+        \    \"typ\": \"Datová sada\",\r
+
+        \    \"název\": {\r
+
+        \        \"cs\": \"Jízdní řády veřejné linkové dopravy (HVD)\",\r
+
+        \        \"en\": \"Public transport timetables (HVD)\"\r
+
+        \    },\r
+
+        \    \"popis\": {\r
+
+        \        \"cs\": \"Obsahem datové sady jsou schválené a aktuálně platné
+        jízdní řády veřejné linkové dopravy postoupené do Celostátního
+        informačního systému o jízdních řádech ve strojově zpracovatelném
+        formátu.\",\r
+
+        \        \"en\": \"This dataset contains approved timetables and
+        timetables in effect for public transport entered into the state-wide
+        timetable information system.\"\r
+
+        \    },\r
+
+        \    \"poskytovatel\":
+        \"https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/66003\
+        008\",\r
+
+        \    \"téma\": [\r
+
+        \        \"http://publications.europa.eu/resource/authority/data-theme/\
+        TRAN\"\r
+
+        \    ],\r
+
+        \    \"periodicita_aktualizace\":
+        \"http://publications.europa.eu/resource/authority/frequency/WEEKLY_3\",\
+        \r
+
+        \    \"klíčové_slovo\": {\r
+
+        \        \"cs\": [\r
+
+        \            \"jízdní řády\",\r
+
+        \            \"veřejná linková doprava\",\r
+
+        \            \"autobus\"\r
+
+        \        ],\r
+
+        \        \"en\": [\r
+
+        \            \"timetable\",\r
+
+        \            \"public transport\",\r
+
+        \            \"bus\"\r
+
+        \        ]\r
+
+        \    },\r
+
+        \    \"geografické_území\": [\r
+
+        \        \"http://publications.europa.eu/resource/authority/continent/E\
+        UROPE\"\r
+
+        \    ],\r
+
+        \    \"prvek_rúian\": [\r
+
+        \        \"https://linked.cuzk.cz/resource/ruian/stat/1\"\r
+
+        \    ],\r
+
+        \    \"časové_pokrytí\": {\r
+
+        \        \"typ\": \"Časový interval\",\r
+
+        \        \"začátek\": \"2009-01-01\",\r
+
+        \        \"konec\": \"2017-12-31\"\r
+
+        \    },\r
+
+        \    \"kontaktní_bod\": {\r
+
+        \        \"typ\": \"Organizace\",\r
+
+        \        \"jméno\": {\r
+
+        \            \"cs\": \"Ministerstvo dopravy, Odbor veřejné dopravy\",\r
+
+        \            \"en\": \"Ministry of Transport\"\r
+
+        \        },\r
+
+        \        \"e-mail\": \"mailto:sekretariat.190@mdcr.cz\"\r
+
+        \    },\r
+
+        \    \"dokumentace\":
+        \"https://www.mdcr.cz/Dokumenty/Verejna-doprava/Jizdni-rady,-kalendare-\
+        pro-jizdni-rady,-metodi-(1)/Jizdni-rady-verejne-dopravy\",\r
+
+        \    \"specifikace\": [\r
+
+        \        \"https://ofn.gov.cz/jízdní-řády/2020-05-01/\"\r
+
+        \    ],\r
+
+        \    \"koncept_euroVoc\": [\r
+
+        \        \"http://eurovoc.europa.eu/4512\"\r
+
+        \    ],\r
+
+        \    \"prostorové_rozlišení_v_metrech\": \"12.0\",\r
+
+        \    \"časové_rozlišení\": \"P1D\",\r
+
+        \    \"kategorie_hvd\": [\r
+
+        \        \"http://data.europa.eu/bna/c_1e787364\"\r
+
+        \    ],\r
+
+        \    \"právní_předpis\": [\r
+
+        \        \"http://data.europa.eu/eli/dir/2019/1024/oj\",\r
+
+        \        \"http://data.europa.eu/eli/reg_impl/2023/138/oj\"\r
+
+        \    ],\r
+
+        \    \"distribuce\": [\r
+
+        \        {\r
+
+        \            \"iri\":
+        \"https://data.gov.cz/lkod/mdcr/datové-sady/vld/distribuce/csv\",\r
+
+        \            \"typ\": \"Distribuce\",\r
+
+        \            \"podmínky_užití\": {\r
+
+        \                \"typ\": \"Specifikace podmínek užití\",\r
+
+        \                \"autorské_dílo\":
+        \"https://creativecommons.org/licenses/by/4.0/\",\r
+
+        \                \"autor\": {\r
+
+        \                    \"cs\": \"Ministerstvo dopravy, Odbor veřejné
+        dopravy\"\r
+
+        \                },\r
+
+        \                \"databáze_chráněná_zvláštními_právy\":
+        \"https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-poř\
+        izovatele-databáze/\",\r
+
+        \                \"databáze_jako_autorské_dílo\":
+        \"https://creativecommons.org/licenses/by/4.0/\",\r
+
+        \                \"autor_databáze\": {\r
+
+        \                    \"cs\": \"Ministerstvo dopravy, Odbor veřejné
+        dopravy\"\r
+
+        \                },\r
+
+        \                \"osobní_údaje\":
+        \"https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/\"\r
+
+        \            },\r
+
+        \            \"přístupové_url\":
+        \"https://portal.cisjr.cz/pub/draha/mestske/JDF.zip\",\r
+
+        \            \"soubor_ke_stažení\":
+        \"https://portal.cisjr.cz/pub/draha/mestske/JDF.zip\",\r
+
+        \            \"formát\":
+        \"http://publications.europa.eu/resource/authority/file-type/ZIP\",\r
+
+        \            \"typ_média\":
+        \"http://www.iana.org/assignments/media-types/application/json\",\r
+
+        \            \"schéma\":
+        \"https://portal.cisjr.cz/schemata/json-schema.json\",\r
+
+        \            \"typ_média_komprese\":
+        \"http://www.iana.org/assignments/media-types/application/zip\",\r
+
+        \            \"typ_média_balíčku\":
+        \"http://www.iana.org/assignments/media-types/application/zip\",\r
+
+        \            \"název\": {\r
+
+        \                \"en\": \"JSON distribution in ZIP file - not HVD\",\r
+
+        \                \"cs\": \"JSON distribuce v ZIP soubrou - toto není HVD
+        distribuce\"\r
+
+        \            },\r
+
+        \            \"právní_předpis\": [\r
+
+        \                \"http://data.europa.eu/eli/dir/2019/1024/oj\"\r
+
+        \            ]\r
+
+        \        },\r
+
+        \        {\r
+
+        \            \"iri\":
+        \"https://data.gov.cz/lkod/mdcr/datové-sady/vld/distribuce/sparql\",\r
+
+        \            \"typ\": \"Distribuce\",\r
+
+        \            \"podmínky_užití\": {\r
+
+        \                \"typ\": \"Specifikace podmínek užití\",\r
+
+        \                \"autorské_dílo\":
+        \"https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/\",\r
+
+        \                \"databáze_chráněná_zvláštními_právy\":
+        \"https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-poř\
+        izovatele-databáze/\",\r
+
+        \                \"databáze_jako_autorské_dílo\":
+        \"https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-data\
+        bází/\",\r
+
+        \                \"osobní_údaje\":
+        \"https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/\"\r
+
+        \            },\r
+
+        \            \"přístupové_url\": \"https://portal.cisjr.cz/sparql\",\r
+
+        \            \"název\": {\r
+
+        \                \"en\": \"SPARQL endpoint for timetables - HVD\",\r
+
+        \                \"cs\": \"SPARQL endpoint pro jízdní řády - HVD\"\r
+
+        \            },\r
+
+        \            \"právní_předpis\": [\r
+
+        \                \"http://data.europa.eu/eli/dir/2019/1024/oj\",\r
+
+        \                \"http://data.europa.eu/eli/reg_impl/2023/138/oj\"\r
+
+        \            ],\r
+
+        \            \"přístupová_služba\": {\r
+
+        \                \"iri\":
+        \"https://data.gov.cz/lkod/mdcr/datové-sady/vld/služba/sparql\",\r
+
+        \                \"typ\": \"Datová služba\",\r
+
+        \                \"název\": {\r
+
+        \                    \"cs\": \"SPARQL endpoint pro jízdní řády -
+        HVD\",\r
+
+        \                    \"en\": \"SPARQL endpoint for timetables - HVD\"\r
+
+        \                },\r
+
+        \                \"specifikace\": [\r
+
+        \                    \"https://www.w3.org/TR/sparql11-protocol/\"\r
+
+        \                ],\r
+
+        \                \"dokumentace\":
+        \"https://www.data.cz/služba/dokumentace\",\r
+
+        \                \"kategorie_hvd\": [\r
+
+        \                    \"http://data.europa.eu/bna/c_1e787364\"\r
+
+        \                ],\r
+
+        \                \"kontaktní_bod\": {\r
+
+        \                    \"typ\": \"Organizace\",\r
+
+        \                    \"jméno\": {\r
+
+        \                        \"cs\": \"Ministerstvo dopravy, Odbor veřejné
+        dopravy\",\r
+
+        \                        \"en\": \"Ministry of Transport\"\r
+
+        \                    },\r
+
+        \                    \"e-mail\": \"mailto:sekretariat.190@mdcr.cz\"\r
+
+        \                },\r
+
+        \                \"právní_předpis\": [\r
+
+        \                    \"http://data.europa.eu/eli/dir/2019/1024/oj\",\r
+
+        \                    \"http://data.europa.eu/eli/reg_impl/2023/138/oj\"\
+        \r
+
+        \                ],\r
+
+        \                \"přístupový_bod\":
+        \"https://portal.cisjr.cz/sparql\",\r
+
+        \                \"popis_přístupového_bodu\":
+        \"https://portal.cisjr.cz/sparql\"\r
+
+        \            }\r
+
+        \        }\r
+
+        \    ]\r
+
+        }</pre>\r
+
+        \      </aside>\r
+
+        \    \r
+
+        \    </section>\r
+
+        \      <section id=\"příklady-série-datových-sad\">\r
+
+        \      <h4>Soubor série datových sad</h4>\r
+
+        \      \r
+
+        \      <p>\r
+
+        \          Na URL specifikovaných v souboru katalogu pak NKD očekává
+        soubory v RDF serializaci <a
+        href=\"../../propojená-data/#serializace-RDF-Turtle\">Turtle</a> či <a
+        href=\"../../propojená-data/#serializace-JSON-LD\">JSON-LD</a>
+        obsahující kompletní metadatový záznam datové sady nebo série datových
+        sad.\r
+
+        \      </p>\r
+
+        \      \r
+
+        \      <aside class=\"example\" title=\"Vzorový soubor s metadaty série
+        datových sad v RDF Turtle\">\r
+
+        \          <p>\r
+
+        \              <a href=\"../příklady/série-datových-sad.ttl\">Stáhnout
+        RDF Turtle</a>.\r
+
+        \              Umístěno na URL
+        <code>https://data.gov.cz/lkod/mdcr/série-datových-sad/rozpočet</code>.\
+        \r
+
+        \          </p>\r
+
+        \          <pre class=\"turtle\">\r
+
+        @prefix continent:
+        &lt;http://publications.europa.eu/resource/authority/continent/&gt; .\r
+
+        @prefix dcat: &lt;http://www.w3.org/ns/dcat#&gt; .\r
+
+        @prefix dcatap: &lt;http://data.europa.eu/r5r/&gt; .\r
+
+        @prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .\r
+
+        @prefix eurovoc: &lt;http://eurovoc.europa.eu/&gt; .\r
+
+        @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .\r
+
+        @prefix frequency:
+        &lt;http://publications.europa.eu/resource/authority/frequency/&gt; .\r
+
+        @prefix ovm:
+        &lt;https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/&gt;
+        .\r
+
+        @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .\r
+
+        @prefix themes:
+        &lt;http://publications.europa.eu/resource/authority/data-theme/&gt; .\r
+
+        @prefix vcard: &lt;http://www.w3.org/2006/vcard/ns#&gt; .\r
+
+        \r
+
+        &lt;https://data.gov.cz/lkod/mdcr/datové-série/rozpočet&gt; a
+        dcat:DatasetSeries;\r
+
+        \  dcterms:title \"Rozpočet Ministerstva dopravy HVD\"@cs,\r
+
+        \    \"Budget of the Ministry of Transport HVD\"@en;\r
+
+        \  dcatap:applicableLegislation
+        &lt;http://data.europa.eu/eli/dir/2019/1024/oj&gt;,\r
+
+        \    &lt;http://data.europa.eu/eli/reg_impl/2023/138/oj&gt;;\r
+
+        \  dcatap:hvdCategory &lt;http://data.europa.eu/bna/c_1e787364&gt;;\r
+
+        \  dcterms:accrualPeriodicity frequency:WEEKLY_3;\r
+
+        \  dcterms:description \"Rozpočet Ministerstva dopravy\"@cs,\r
+
+        \    \"Budget of the Ministry of Transport\"@en;\r
+
+        \  dcterms:publisher ovm:66003008;\r
+
+        \  dcterms:spatial continent:EUROPE,\r
+
+        \    &lt;https://linked.cuzk.cz/resource/ruian/stat/1&gt;;\r
+
+        \  dcat:contactPoint [\r
+
+        \    a vcard:Organization;\r
+
+        \    vcard:fn \"Ministerstvo dopravy, Odbor veřejné dopravy\"@cs,\r
+
+        \      \"Ministry of Transport\"@en;\r
+
+        \    vcard:hasEmail &lt;mailto:sekretariat.190@mdcr.cz&gt;\r
+
+        \  ];\r
+
+        \  dcat:keyword \"rozpočet\"@cs,\r
+
+        \    \"budget\"@en;\r
+
+        \  dcat:theme themes:TRAN,\r
+
+        \    eurovoc:4512;\r
+
+        \  foaf:page &lt;https://www.mdcr.cz/rozpočet&gt; .</pre>\r
+
+        \    </aside>\r
+
+        \r
+
+        \    <aside class=\"example\" title=\"Vzorový soubor s metadaty série
+        datových sad v JSON-LD\">\r
+
+        \        <p>\r
+
+        \            <a
+        href=\"../příklady/série-datových-sad.jsonld\">JSON-LD</a>, <a
+        href=\"../série-datových-sad/schéma.json\">JSON schéma</a>, <a
+        href=\"../série-datových-sad/kontext.jsonld\">JSON-LD kontext</a>.\r
+
+        \            Umístěno na URL
+        <code>https://data.gov.cz/lkod/mdcr/série-datových-sad/rozpočet</code>.\
+        \r
+
+        \        </p>\r
+
+        \        <pre class=\"json\">\r
+
+        {\r
+
+        \    \"@context\":
+        \"https://ofn.gov.cz/dcat-ap-cz-hvd/draft/série-datových-sad/kontext.js\
+        onld\",\r
+
+        \    \"iri\": \"https://data.gov.cz/lkod/mdcr/datové-série/rozpočet\",\r
+
+        \    \"typ\": \"Série datových sad\",\r
+
+        \    \"název\": {\r
+
+        \        \"cs\": \"Rozpočet Ministerstva dopravy HVD\",\r
+
+        \        \"en\": \"Budget of the Ministry of Transport HVD\"\r
+
+        \    },\r
+
+        \    \"popis\": {\r
+
+        \        \"cs\": \"Rozpočet Ministerstva dopravy\",\r
+
+        \        \"en\": \"Budget of the Ministry of Transport\"\r
+
+        \    },\r
+
+        \    \"poskytovatel\":
+        \"https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/66003\
+        008\",\r
+
+        \    \"téma\": [\r
+
+        \        \"http://publications.europa.eu/resource/authority/data-theme/\
+        TRAN\"\r
+
+        \    ],\r
+
+        \    \"periodicita_aktualizace\":
+        \"http://publications.europa.eu/resource/authority/frequency/WEEKLY_3\",\
+        \r
+
+        \    \"klíčové_slovo\": {\r
+
+        \        \"cs\": [\r
+
+        \            \"rozpočet\"\r
+
+        \        ],\r
+
+        \        \"en\": [\r
+
+        \            \"budget\"\r
+
+        \        ]\r
+
+        \    },\r
+
+        \    \"geografické_území\": [\r
+
+        \        \"http://publications.europa.eu/resource/authority/continent/E\
+        UROPE\"\r
+
+        \    ],\r
+
+        \    \"prvek_rúian\": [\r
+
+        \        \"https://linked.cuzk.cz/resource/ruian/stat/1\"\r
+
+        \    ],\r
+
+        \    \"kontaktní_bod\": {\r
+
+        \        \"typ\": \"Organizace\",\r
+
+        \        \"jméno\": {\r
+
+        \            \"cs\": \"Ministerstvo dopravy, Odbor veřejné dopravy\",\r
+
+        \            \"en\": \"Ministry of Transport\"\r
+
+        \        },\r
+
+        \        \"e-mail\": \"mailto:sekretariat.190@mdcr.cz\"\r
+
+        \    },\r
+
+        \    \"dokumentace\": \"https://www.mdcr.cz/rozpočet\",\r
+
+        \    \"koncept_euroVoc\": [\r
+
+        \        \"http://eurovoc.europa.eu/4512\"\r
+
+        \    ],\r
+
+        \    \"kategorie_hvd\": [\r
+
+        \        \"http://data.europa.eu/bna/c_1e787364\"\r
+
+        \    ],\r
+
+        \    \"právní_předpis\": [\r
+
+        \        \"http://data.europa.eu/eli/dir/2019/1024/oj\",\r
+
+        \        \"http://data.europa.eu/eli/reg_impl/2023/138/oj\"\r
+
+        \    ]\r
+
+        }</pre>\r
+
+        \    </aside>\r
+
+        \r
+
+        \  </section>\r
+
+        \r
+
+        </section>"
+      html-head: >-
+        <meta charset="utf-8" />
+
+        <title>{{translate label}}</title>
+
+        <meta name="color-scheme" content="light dark">
+
+        <script type="application/ld+json">
+          {{{json dsv}}}
+        </script>
+
+        <script
+          src="https://ofn.gov.cz/static/js/respec-odcz.js"
+          class="remove"
+          defer
+        ></script>
+
+        <script class="remove">
+
+        {{> respecConfig}}
+
+        </script>
+
+
+        <style>
+          .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
+            max-width: 100%;
+            margin: auto;
+            height: auto;
+          }
+
+          table.simple {
+            margin: auto;
+            border-spacing: 0;
+            border-collapse: collapse;
+          }
+
+          table.simple th {
+            padding: 3px 10px;
+            text-align: left;
+          }
+
+          table.simple td {
+            border-top: 1px solid #ddd;
+            padding: 3px 10px;
+          }
+        </style>
+      introduction: >-
+        <section id="úvod">
+
+
+        <h2>Úvod</h2>
+
+        <p>
+            Pro otevřená data je registrace v Národním katalogu otevřených dat (NKOD), jež se stal součástí Národním katalogu dat (NKD), jedna ze <a href="https://www.e-sbirka.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_4c/odst_1">zákonných podmínek pro to, aby data mohla být nazývána otevřenými daty</a>.
+            Datové sady s vysokou socio-ekonomickou hodnotou, tzv. High-Value Datasets, jsou datové sady identifikované v <a href="https://eur-lex.europa.eu/eli/reg_impl/2023/138/oj?locale=cs#">prováděcím nařízení</a>, musí být publikovány jako otevřená data, a navíc jsou na jejich metadatový popis i datový obsah kladeny zvýšené kvalitativní nároky.
+            Tato otevřená formální norma specifikuje dodatečné požadavky na metadatový záznam HVD datové sady nad rámec těch, které musí splňovat pro <a href="../../../dcat-ap-cz-otevřená-data/">DCAT-AP-CZ: Datové sady otevřených dat</a>.
+        </p>
+
+
+        <p class="note">
+          Součástí požadavků prováděcího nařízení HVD jsou i kvalitativní požadavky na metadatové záznamy.
+          Ty zahrnují mj. perzistenci použitých identifikátorů (IRI) datových sad, datových služeb, podmínek užití, či koncových bodů služeb.
+          Detailní informace viz <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#mapping-the-hvd-ir-to-dcat-ap">sekce 10 v DCAT-AP HVD</a>, zejména pak <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#c2">sekce 10.4</a>.
+        </p>  
+
+
+        </section>
+      localBiblio: >-
+        localBiblio: {
+              "DCAT-AP": {
+                  title: "DCAT Application Profile for data portals in Europe",
+                  href: "https://semiceu.github.io/DCAT-AP/releases/3.0.1/",
+                  date: "2024"
+              },
+              "GeoDCAT-AP": {
+                  title: "GeoDCAT Application Profile for data portals in Europe",
+                  href: "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0/",
+                  date: "2024"
+              },
+              "DCAT-AP-HVD": {
+                  title: "DCAT-AP HVD Application Profile",
+                  href: "https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/",
+                  date: "2024"
+              },
+              "EUV-FREQ":{
+              "href":"https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency",
+              "title":"Frequency",
+              "publisher":"Publications Office of the European Union"
+          },
+          "EUV-FT":{
+                "href":"https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/file-type",
+                "title":"File type",
+                "publisher":"Publications Office of the European Union"
+          },
+          "EUV-THEMES":{
+                "href":"https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/data-theme",
+                "title":"Data theme",
+                "publisher":"Publications Office of the European Union"
+          },
+          "EUV-EUROVOC":{
+                "href":"https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc",
+                "title":"EuroVoc",
+                "publisher":"Publications Office of the European Union"
+          },
+          "EUV-HVD":{
+                "href":"https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/high-value-dataset-category",
+                "title":"High-value dataset categories",
+                "publisher":"Publications Office of the European Union"
+          },
+          "EUV-LIC":{
+                "href":"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/licence",
+                "title":"Licence",
+                "publisher":"Publications Office of the European Union"
+          },
+          "EUV-CONT":{
+                "href":"https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent",
+                "title":"Continent",
+                "publisher":"Publications Office of the European Union"
+          },
+          "EUV-COUNTRIES":{
+            "href":"https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country",
+            "title":"Country",
+            "publisher":"Publications Office of the European Union"
+          },
+          "EUV-PLACES":{
+              "href":"https://op.europa.eu/cs/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place",
+              "title":"Place",
+              "publisher":"Publications Office of the European Union"
+          },
+          "GEONAMES":{
+                "href":"https://geonames.org/",
+                "title":"Geonames"
+          },
+          "RUIAN": {
+            "href": "https://ofn.gov.cz/propojená-data/#RÚIAN",
+            "title": "IRI prvků RÚIAN v OFN Propojená data"
+          },
+           "DCAT-AP-IT": {
+              "title": "Profilo metadatazione DCAT-AP_IT",
+              "href": "https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/dcat-ap_it.html",
+              "publisher": "AgID & Team Digitale",
+              "id": "dcat-ap-it"
+          },
+          "GeoDCAT-AP-IT": {
+              "title": "GeoDCAT-AP in Italy, the national guidelines published",
+              "href": "https://web.archive.org/web/20200506120557/https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/news/geodcat-apit",
+              "id": "geodcat-ap-it"
+          },
+          },
+      respecConfig: >-
+        // All config options at https://respec.org/docs/
+
+        var respecConfig = {
+          specStatus: "ED",
+            //publishDate: "2025-08-12",
+            shortName: "dcat-ap-cz-hvd",
+            historyURI: null,
+            showPreviousVersion: true,
+            thisVersion: "https://ofn.gov.cz/dcat-ap-cz-hvd/draft/",
+            prevVersion: "https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-otevřených-dat/2024-05-28/",
+            prevRecURI: "https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-otevřených-dat/2024-05-28/",
+            maxTocLevel: 3,
+            latestVersion: "https://ofn.gov.cz/dcat-ap-cz-hvd/",
+            noRecTrack: true,
+            editors: [{
+              name: "Jakub Klímek",
+              orcid: "0000-0001-7234-3051",
+              company:    "Digitální a informační agentura",
+              companyURL: "https://dia.gov.cz"
+            }],
+            inlineCSS: "true",
+            github: "https://github.com/datagov-cz/otevrene-formalni-normy/",
+            otherLinks: [{
+                  key: "Odkazy",
+                  data: [{
+                      value: "Validátor lokálních katalogů",
+                      href: "https://datagov-cz.github.io/lkod-validator/"
+                  },{
+                      value: "Portál otevřených dat",
+                      href: "https://data.gov.cz"
+                  },{
+                      value: "Kontaktní e-mail",
+                      href: "mailto:otevrenadata@dia.gov.cz"
+                  },{
+                      value: "DCAT-AP-CZ: Rozhraní katalogů dat",
+                      href: "../../../dcat-ap-cz-rozhraní-katalogů-dat"
+                  },{
+                      value: "DCAT-AP-CZ: Základní datový model pro katalogy dat",
+                      href: "../../../dcat-ap-cz"
+                  }]
+              }],
+          {{> localBiblio}}
+        };
+  http://dataspecer.com/resources/local/git-remote-configuration:
+    publicationBranch: publication-branch
+    exportFormat: yaml
+    exportVersion: 2
+modelCompositionConfiguration:
+  modelType: application-profile
+  model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  canAddEntities: false
+  canModify: true
+  profiles:
+    modelType: merge
+    models: null

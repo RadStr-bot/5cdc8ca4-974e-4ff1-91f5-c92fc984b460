@@ -1,0 +1,18 @@
+iri: 77abb318-cc12-4e6a-9ed3-95e531246fcf
+projectIri: 1838e110-8e88-4051-9579-dd46c709eab4
+types:
+  - http://dataspecer.com/resources/local/package
+userMetadata:
+  label:
+    cs: DCAT-AP 3.0.1 na základě DCAT 3 DAP
+    en: DCAT-AP 3.0.1 based on DCAT 3 DAP
+  description: {}
+  importedFromUrl: https://mff-uk.github.io/specifications/dcat-ap/
+  documentBaseUrl: https://mff-uk.github.io/specifications/dcat-ap/
+metadata:
+  creationDate: 2026-04-04T20:44:35.410Z
+  modificationDate: 2026-04-04T20:54:27.096Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.438Z
+_exportedBy: http://localhost:3100

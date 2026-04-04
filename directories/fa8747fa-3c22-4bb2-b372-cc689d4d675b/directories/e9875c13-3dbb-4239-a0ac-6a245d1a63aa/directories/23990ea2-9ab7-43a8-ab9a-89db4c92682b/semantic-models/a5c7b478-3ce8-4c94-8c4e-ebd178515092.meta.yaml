@@ -1,0 +1,15 @@
+iri: 2d785ee7-66c0-46cc-a911-05e34675f8c4
+projectIri: a5c7b478-3ce8-4c94-8c4e-ebd178515092
+types:
+  - http://dataspecer.com/resources/local/semantic-model
+userMetadata:
+  label:
+    en: DCAT-AP-CZ - terms of use
+  documentBaseUrl: https://ofn.gov.cz/dcat-ap-cz-podmínky-užití/2025-08-12/
+metadata:
+  creationDate: 2026-04-04T20:44:46.564Z
+  modificationDate: 2026-04-04T20:54:28.158Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.460Z
+_exportedBy: http://localhost:3100

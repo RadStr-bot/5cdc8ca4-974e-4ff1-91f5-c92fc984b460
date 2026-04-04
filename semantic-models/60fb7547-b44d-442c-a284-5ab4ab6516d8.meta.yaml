@@ -1,0 +1,16 @@
+iri: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+projectIri: 60fb7547-b44d-442c-a284-5ab4ab6516d8
+types:
+  - http://dataspecer.com/resources/local/semantic-model
+userMetadata:
+  label:
+    en: DCAT-AP-CZ-HVD
+  description:
+    en: Semantic model for the profile
+metadata:
+  creationDate: 2026-04-04T20:44:55.995Z
+  modificationDate: 2026-04-04T20:54:32.748Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.501Z
+_exportedBy: http://localhost:3100

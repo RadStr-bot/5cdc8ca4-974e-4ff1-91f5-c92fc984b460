@@ -1,0 +1,15 @@
+iri: 2cb16798-1758-4b1d-a105-e689f7b207d6
+projectIri: 4db6bac8-a5cd-4dbd-89d3-a4bb06cd0b7c
+types:
+  - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
+userMetadata:
+  documentBaseUrl: https://www.w3.org/ns/prov-o
+  label:
+    en: prov-o
+metadata:
+  creationDate: 2026-04-04T20:44:38.852Z
+  modificationDate: 2026-04-04T20:54:24.640Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.421Z
+_exportedBy: http://localhost:3100

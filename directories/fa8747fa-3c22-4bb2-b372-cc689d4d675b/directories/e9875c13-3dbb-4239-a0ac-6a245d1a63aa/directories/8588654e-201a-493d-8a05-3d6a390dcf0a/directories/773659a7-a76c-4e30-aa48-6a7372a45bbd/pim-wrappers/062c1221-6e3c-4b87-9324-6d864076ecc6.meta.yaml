@@ -1,0 +1,15 @@
+iri: b107faa3-9b3e-47d4-913a-ceec5fa6b091
+projectIri: 062c1221-6e3c-4b87-9324-6d864076ecc6
+types:
+  - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
+userMetadata:
+  documentBaseUrl: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl
+  label:
+    en: dublin_core_terms
+metadata:
+  creationDate: 2026-04-04T20:44:47.885Z
+  modificationDate: 2026-04-04T20:54:29.396Z
+_version: 1
+_exportVersion: 2
+_exportedAt: 2026-04-04T20:54:37.469Z
+_exportedBy: http://localhost:3100
