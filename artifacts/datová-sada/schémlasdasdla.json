@@ -1,0 +1,907 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ofn.gov.cz/dcat-ap-cz-hvd/draft/datová-sada/schémlasdasdla.json",
+  "type": "object",
+  "required": [
+    "název",
+    "popis",
+    "poskytovatel",
+    "téma",
+    "periodicita_aktualizace",
+    "klíčové_slovo",
+    "prvek_rúian",
+    "kategorie_hvd",
+    "právní_předpis",
+    "distribuce"
+  ],
+  "properties": {
+    "název": {
+      "title": "Text",
+      "type": "object",
+      "additionalProperties": {
+        "title": "Hodnota v jiném jazyce",
+        "type": "string"
+      },
+      "properties": {
+        "cs": {
+          "title": "Hodnota v českém jazyce",
+          "type": "string"
+        },
+        "en": {
+          "title": "Hodnota v anglickém jazyce",
+          "type": "string"
+        }
+      }
+    },
+    "popis": {
+      "title": "Text",
+      "type": "object",
+      "additionalProperties": {
+        "title": "Hodnota v jiném jazyce",
+        "type": "string"
+      },
+      "properties": {
+        "cs": {
+          "title": "Hodnota v českém jazyce",
+          "type": "string"
+        },
+        "en": {
+          "title": "Hodnota v anglickém jazyce",
+          "type": "string"
+        }
+      }
+    },
+    "poskytovatel": {
+      "type": "string",
+      "format": "iri",
+      "examples": [
+        "https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/66003008"
+      ]
+    },
+    "je_součástí": {
+      "type": "string",
+      "format": "iri"
+    },
+    "téma": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "format": "iri",
+        "pattern": "^http://publications\\.europa\\.eu/resource/authority/data-theme/.*$",
+        "examples": [
+          "http://publications.europa.eu/resource/authority/data-theme/TRAN"
+        ]
+      }
+    },
+    "periodicita_aktualizace": {
+      "type": "string",
+      "format": "iri",
+      "pattern": "^http://publications\\.europa\\.eu/resource/authority/frequency/.*$",
+      "examples": [
+        "http://publications.europa.eu/resource/authority/frequency/MONTHLY"
+      ]
+    },
+    "klíčové_slovo": {
+      "title": "Text",
+      "type": "object",
+      "additionalProperties": {
+        "title": "Hodnota v jiném jazyce",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "properties": {
+        "cs": {
+          "title": "Hodnota v českém jazyce",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "en": {
+          "title": "Hodnota v anglickém jazyce",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "geografické_území": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "iri",
+        "examples": [
+          "http://publications.europa.eu/resource/authority/continent/EUROPE",
+          "https://sws.geonames.org/6290257/"
+        ]
+      }
+    },
+    "prvek_rúian": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "format": "iri",
+        "pattern": "^https://linked.cuzk.cz/resource/ruian/.*$",
+        "examples": [
+          "https://linked.cuzk.cz/resource/ruian/stat/1",
+          "https://linked.cuzk.cz/resource/ruian/vusc/108",
+          "https://linked.cuzk.cz/resource/ruian/obec/502235"
+        ]
+      }
+    },
+    "časové_pokrytí": {
+      "type": "object",
+      "properties": {
+        "začátek": {
+          "title": "Datum",
+          "type": "string",
+          "format": "date"
+        },
+        "konec": {
+          "title": "Datum",
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "kontaktní_bod": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "jméno": {
+              "title": "Text",
+              "type": "object",
+              "additionalProperties": {
+                "title": "Hodnota v jiném jazyce",
+                "type": "string"
+              },
+              "properties": {
+                "cs": {
+                  "title": "Hodnota v českém jazyce",
+                  "type": "string"
+                },
+                "en": {
+                  "title": "Hodnota v anglickém jazyce",
+                  "type": "string"
+                }
+              }
+            },
+            "e-mail": {
+              "description": "E-mailová adresa, na které lze navázat kontakt.",
+              "type": "string",
+              "format": "iri",
+              "pattern": "^mailto:[^@]+@[^@]+",
+              "examples": [
+                "mailto:jan.novak@organizace.cz"
+              ]
+            },
+            "kontaktní_stránka": {
+              "title": "kontaktní stránka",
+              "description": "Webová stránka, která buďto přímo umožňuje navázat kontakt, nebo obsahuje informace o tom, jak navázat kontakt.",
+              "type": "string",
+              "format": "iri",
+              "pattern": "^https://.*$",
+              "examples": [
+                "https://www.mdcr.cz/Dokumenty/Verejna-doprava/Jizdni-rady,-kalendare-pro-jizdni-rady,-metodi-(1)/Jizdni-rady-verejne-dopravy"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "jméno": {
+              "title": "Text",
+              "type": "object",
+              "additionalProperties": {
+                "title": "Hodnota v jiném jazyce",
+                "type": "string"
+              },
+              "properties": {
+                "cs": {
+                  "title": "Hodnota v českém jazyce",
+                  "type": "string"
+                },
+                "en": {
+                  "title": "Hodnota v anglickém jazyce",
+                  "type": "string"
+                }
+              }
+            },
+            "e-mail": {
+              "description": "E-mailová adresa, na které lze navázat kontakt.",
+              "type": "string",
+              "format": "iri",
+              "pattern": "^mailto:[^@]+@[^@]+",
+              "examples": [
+                "mailto:jan.novak@organizace.cz"
+              ]
+            },
+            "kontaktní_stránka": {
+              "title": "kontaktní stránka",
+              "description": "Webová stránka, která buďto přímo umožňuje navázat kontakt, nebo obsahuje informace o tom, jak navázat kontakt.",
+              "type": "string",
+              "format": "iri",
+              "pattern": "^https://.*$",
+              "examples": [
+                "https://www.mdcr.cz/Dokumenty/Verejna-doprava/Jizdni-rady,-kalendare-pro-jizdni-rady,-metodi-(1)/Jizdni-rady-verejne-dopravy"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "dokumentace": {
+      "type": "string",
+      "format": "iri",
+      "pattern": "^https://.*$",
+      "examples": [
+        "https://www.mdcr.cz/Dokumenty/Verejna-doprava/Jizdni-rady,-kalendare-pro-jizdni-rady,-metodi-(1)/Jizdni-rady-verejne-dopravy"
+      ]
+    },
+    "specifikace": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "iri",
+        "pattern": "^https://.*$",
+        "examples": [
+          "https://ofn.gov.cz/turistické-cíle/2020-07-01/"
+        ]
+      }
+    },
+    "koncept_euroVoc": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "iri",
+        "pattern": "^http://eurovoc\\.europa\\.eu/.*$",
+        "examples": [
+          "http://eurovoc.europa.eu/1001"
+        ]
+      }
+    },
+    "prostorové_rozlišení_v_metrech": {
+      "title": "Desetinné číslo",
+      "type": "string",
+      "pattern": "^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$"
+    },
+    "časové_rozlišení": {
+      "title": "http://www.w3.org/2001/XMLSchema#duration",
+      "type": "string"
+    },
+    "kategorie_hvd": {
+      "title": "kategorie HVD",
+      "description": "Kategorie HVD do které datová sada patří.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "format": "iri",
+        "pattern": "^http://data\\.europa\\.eu/bna/.*$",
+        "examples": [
+          "http://data.europa.eu/bna/c_1e787364",
+          "http://data.europa.eu/bna/c_25f43866"
+        ]
+      }
+    },
+    "právní_předpis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "format": "iri",
+        "pattern": "^http",
+        "examples": [
+          "http://data.europa.eu/eli/dir/2019/1024/oj",
+          "https://www.e-sbirka.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_3a/odst_6",
+          "https://www.e-sbirka.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_5a/odst_1",
+          "http://data.europa.eu/eli/reg_impl/2023/138/oj"
+        ]
+      }
+    },
+    "distribuce": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "required": [
+              "podmínky_užití",
+              "přístupové_url",
+              "právní_předpis",
+              "soubor_ke_stažení",
+              "typ_média"
+            ],
+            "properties": {
+              "podmínky_užití": {
+                "type": "object",
+                "required": [
+                  "autorské_dílo",
+                  "databáze_jako_autorské_dílo",
+                  "databáze_chráněná_zvláštními_právy",
+                  "osobní_údaje"
+                ],
+                "properties": {
+                  "autorské_dílo": {
+                    "type": "string",
+                    "format": "iri",
+                    "examples": [
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/",
+                      "https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-databází/",
+                      "https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-pořizovatele-databáze/",
+                      "https://creativecommons.org/licenses/by/4.0/",
+                      "https://creativecommons.org/publicdomain/zero/1.0/",
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/",
+                      "https://data.gov.cz/podmínky-užití/obsahuje-osobní-údaje/"
+                    ]
+                  },
+                  "autor": {
+                    "title": "Text",
+                    "type": "object",
+                    "additionalProperties": {
+                      "title": "Hodnota v jiném jazyce",
+                      "type": "string"
+                    },
+                    "properties": {
+                      "cs": {
+                        "title": "Hodnota v českém jazyce",
+                        "type": "string"
+                      },
+                      "en": {
+                        "title": "Hodnota v anglickém jazyce",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "databáze_jako_autorské_dílo": {
+                    "type": "string",
+                    "format": "iri",
+                    "examples": [
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/",
+                      "https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-databází/",
+                      "https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-pořizovatele-databáze/",
+                      "https://creativecommons.org/licenses/by/4.0/",
+                      "https://creativecommons.org/publicdomain/zero/1.0/",
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/",
+                      "https://data.gov.cz/podmínky-užití/obsahuje-osobní-údaje/"
+                    ]
+                  },
+                  "autor_databáze": {
+                    "title": "Text",
+                    "type": "object",
+                    "additionalProperties": {
+                      "title": "Hodnota v jiném jazyce",
+                      "type": "string"
+                    },
+                    "properties": {
+                      "cs": {
+                        "title": "Hodnota v českém jazyce",
+                        "type": "string"
+                      },
+                      "en": {
+                        "title": "Hodnota v anglickém jazyce",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "databáze_chráněná_zvláštními_právy": {
+                    "type": "string",
+                    "format": "iri",
+                    "examples": [
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/",
+                      "https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-databází/",
+                      "https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-pořizovatele-databáze/",
+                      "https://creativecommons.org/licenses/by/4.0/",
+                      "https://creativecommons.org/publicdomain/zero/1.0/",
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/",
+                      "https://data.gov.cz/podmínky-užití/obsahuje-osobní-údaje/"
+                    ]
+                  },
+                  "osobní_údaje": {
+                    "type": "string",
+                    "format": "iri",
+                    "examples": [
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/",
+                      "https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-databází/",
+                      "https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-pořizovatele-databáze/",
+                      "https://creativecommons.org/licenses/by/4.0/",
+                      "https://creativecommons.org/publicdomain/zero/1.0/",
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/",
+                      "https://data.gov.cz/podmínky-užití/obsahuje-osobní-údaje/"
+                    ]
+                  },
+                  "méně_restriktivní_licence": {
+                    "title": "méně restriktivní licence",
+                    "description": "Evropská licence, která je méně restriktivní, než podmínky užití.",
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^http://publications\\.europa\\.eu/resource/authority/licence/.*$",
+                    "examples": [
+                      "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0",
+                      "http://publications.europa.eu/resource/authority/licence/CC0"
+                    ]
+                  },
+                  "přesně_odpovídá": {
+                    "title": "přesně odpovídá",
+                    "description": "Evropská licence, jíž podmínky užití přesně odpovídají.",
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^http://publications\\.europa\\.eu/resource/authority/licence/.*$",
+                    "examples": [
+                      "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0",
+                      "http://publications.europa.eu/resource/authority/licence/CC0"
+                    ]
+                  }
+                }
+              },
+              "přístupové_url": {
+                "type": "string",
+                "format": "iri",
+                "pattern": "^https://.*$",
+                "examples": [
+                  "https://www.trebic.cz/zdroj/aktualita/2020/dopadení-lupiče-na-francouzské-ulici"
+                ]
+              },
+              "právní_předpis": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "format": "iri",
+                  "pattern": "^http",
+                  "examples": [
+                    "http://data.europa.eu/eli/dir/2019/1024/oj",
+                    "https://www.e-sbirka.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_3a/odst_6",
+                    "https://www.e-sbirka.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_5a/odst_1",
+                    "http://data.europa.eu/eli/reg_impl/2023/138/oj"
+                  ]
+                }
+              },
+              "název": {
+                "title": "Text",
+                "type": "object",
+                "additionalProperties": {
+                  "title": "Hodnota v jiném jazyce",
+                  "type": "string"
+                },
+                "properties": {
+                  "cs": {
+                    "title": "Hodnota v českém jazyce",
+                    "type": "string"
+                  },
+                  "en": {
+                    "title": "Hodnota v anglickém jazyce",
+                    "type": "string"
+                  }
+                }
+              },
+              "soubor_ke_stažení": {
+                "type": "string",
+                "format": "iri",
+                "pattern": "^https://.*$",
+                "examples": [
+                  "https://www.trebic.cz/zdroj/aktualita/2020/dopadení-lupiče-na-francouzské-ulici"
+                ]
+              },
+              "formát": {
+                "type": "string",
+                "format": "iri",
+                "pattern": "^http://publications\\.europa\\.eu/resource/authority/file-type/.*$",
+                "examples": [
+                  "http://publications.europa.eu/resource/authority/file-type/CSV"
+                ]
+              },
+              "typ_média": {
+                "type": "string",
+                "format": "iri",
+                "pattern": "^http://www\\.iana\\.org/assignments/media-types/.*$",
+                "examples": [
+                  "http://www.iana.org/assignments/media-types/image/tiff"
+                ]
+              },
+              "schéma": {
+                "type": "string",
+                "format": "iri",
+                "pattern": "^https://.*$",
+                "examples": [
+                  "https://www.trebic.cz/zdroj/aktualita/2020/dopadení-lupiče-na-francouzské-ulici"
+                ]
+              },
+              "typ_média_komprese": {
+                "type": "string",
+                "format": "iri",
+                "pattern": "^http://www\\.iana\\.org/assignments/media-types/.*$",
+                "examples": [
+                  "http://www.iana.org/assignments/media-types/image/tiff"
+                ]
+              },
+              "typ_média_balíčku": {
+                "type": "string",
+                "format": "iri",
+                "pattern": "^http://www\\.iana\\.org/assignments/media-types/.*$",
+                "examples": [
+                  "http://www.iana.org/assignments/media-types/image/tiff"
+                ]
+              }
+            }
+          },
+          {
+            "type": "object",
+            "required": [
+              "podmínky_užití",
+              "přístupové_url",
+              "právní_předpis",
+              "přístupová_služba"
+            ],
+            "properties": {
+              "podmínky_užití": {
+                "type": "object",
+                "required": [
+                  "autorské_dílo",
+                  "databáze_jako_autorské_dílo",
+                  "databáze_chráněná_zvláštními_právy",
+                  "osobní_údaje"
+                ],
+                "properties": {
+                  "autorské_dílo": {
+                    "type": "string",
+                    "format": "iri",
+                    "examples": [
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/",
+                      "https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-databází/",
+                      "https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-pořizovatele-databáze/",
+                      "https://creativecommons.org/licenses/by/4.0/",
+                      "https://creativecommons.org/publicdomain/zero/1.0/",
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/",
+                      "https://data.gov.cz/podmínky-užití/obsahuje-osobní-údaje/"
+                    ]
+                  },
+                  "autor": {
+                    "title": "Text",
+                    "type": "object",
+                    "additionalProperties": {
+                      "title": "Hodnota v jiném jazyce",
+                      "type": "string"
+                    },
+                    "properties": {
+                      "cs": {
+                        "title": "Hodnota v českém jazyce",
+                        "type": "string"
+                      },
+                      "en": {
+                        "title": "Hodnota v anglickém jazyce",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "databáze_jako_autorské_dílo": {
+                    "type": "string",
+                    "format": "iri",
+                    "examples": [
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/",
+                      "https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-databází/",
+                      "https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-pořizovatele-databáze/",
+                      "https://creativecommons.org/licenses/by/4.0/",
+                      "https://creativecommons.org/publicdomain/zero/1.0/",
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/",
+                      "https://data.gov.cz/podmínky-užití/obsahuje-osobní-údaje/"
+                    ]
+                  },
+                  "autor_databáze": {
+                    "title": "Text",
+                    "type": "object",
+                    "additionalProperties": {
+                      "title": "Hodnota v jiném jazyce",
+                      "type": "string"
+                    },
+                    "properties": {
+                      "cs": {
+                        "title": "Hodnota v českém jazyce",
+                        "type": "string"
+                      },
+                      "en": {
+                        "title": "Hodnota v anglickém jazyce",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "databáze_chráněná_zvláštními_právy": {
+                    "type": "string",
+                    "format": "iri",
+                    "examples": [
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/",
+                      "https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-databází/",
+                      "https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-pořizovatele-databáze/",
+                      "https://creativecommons.org/licenses/by/4.0/",
+                      "https://creativecommons.org/publicdomain/zero/1.0/",
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/",
+                      "https://data.gov.cz/podmínky-užití/obsahuje-osobní-údaje/"
+                    ]
+                  },
+                  "osobní_údaje": {
+                    "type": "string",
+                    "format": "iri",
+                    "examples": [
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/",
+                      "https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-databází/",
+                      "https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-pořizovatele-databáze/",
+                      "https://creativecommons.org/licenses/by/4.0/",
+                      "https://creativecommons.org/publicdomain/zero/1.0/",
+                      "https://data.gov.cz/podmínky-užití/neobsahuje-osobní-údaje/",
+                      "https://data.gov.cz/podmínky-užití/obsahuje-osobní-údaje/"
+                    ]
+                  },
+                  "méně_restriktivní_licence": {
+                    "title": "méně restriktivní licence",
+                    "description": "Evropská licence, která je méně restriktivní, než podmínky užití.",
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^http://publications\\.europa\\.eu/resource/authority/licence/.*$",
+                    "examples": [
+                      "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0",
+                      "http://publications.europa.eu/resource/authority/licence/CC0"
+                    ]
+                  },
+                  "přesně_odpovídá": {
+                    "title": "přesně odpovídá",
+                    "description": "Evropská licence, jíž podmínky užití přesně odpovídají.",
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^http://publications\\.europa\\.eu/resource/authority/licence/.*$",
+                    "examples": [
+                      "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0",
+                      "http://publications.europa.eu/resource/authority/licence/CC0"
+                    ]
+                  }
+                }
+              },
+              "přístupové_url": {
+                "type": "string",
+                "format": "iri",
+                "pattern": "^https://.*$",
+                "examples": [
+                  "https://www.trebic.cz/zdroj/aktualita/2020/dopadení-lupiče-na-francouzské-ulici"
+                ]
+              },
+              "právní_předpis": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "format": "iri",
+                  "pattern": "^http",
+                  "examples": [
+                    "http://data.europa.eu/eli/dir/2019/1024/oj",
+                    "https://www.e-sbirka.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_3a/odst_6",
+                    "https://www.e-sbirka.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_5a/odst_1",
+                    "http://data.europa.eu/eli/reg_impl/2023/138/oj"
+                  ]
+                }
+              },
+              "název": {
+                "title": "Text",
+                "type": "object",
+                "additionalProperties": {
+                  "title": "Hodnota v jiném jazyce",
+                  "type": "string"
+                },
+                "properties": {
+                  "cs": {
+                    "title": "Hodnota v českém jazyce",
+                    "type": "string"
+                  },
+                  "en": {
+                    "title": "Hodnota v anglickém jazyce",
+                    "type": "string"
+                  }
+                }
+              },
+              "přístupová_služba": {
+                "type": "object",
+                "required": [
+                  "kategorie_hvd",
+                  "název",
+                  "přístupový_bod",
+                  "popis_přístupového_bodu",
+                  "dokumentace",
+                  "právní_předpis",
+                  "kontaktní_bod"
+                ],
+                "properties": {
+                  "kategorie_hvd": {
+                    "title": "kategorie HVD",
+                    "description": "Kategorie HVD do které datová služba patří.",
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "format": "iri",
+                      "pattern": "^http://data\\.europa\\.eu/bna/.*$",
+                      "examples": [
+                        "http://data.europa.eu/bna/c_1e787364",
+                        "http://data.europa.eu/bna/c_25f43866"
+                      ]
+                    }
+                  },
+                  "název": {
+                    "title": "Text",
+                    "type": "object",
+                    "additionalProperties": {
+                      "title": "Hodnota v jiném jazyce",
+                      "type": "string"
+                    },
+                    "properties": {
+                      "cs": {
+                        "title": "Hodnota v českém jazyce",
+                        "type": "string"
+                      },
+                      "en": {
+                        "title": "Hodnota v anglickém jazyce",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "přístupový_bod": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https://.*$",
+                    "examples": [
+                      "https://www.trebic.cz/zdroj/aktualita/2020/dopadení-lupiče-na-francouzské-ulici"
+                    ]
+                  },
+                  "popis_přístupového_bodu": {
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https://.*$",
+                    "examples": [
+                      "https://www.trebic.cz/zdroj/aktualita/2020/dopadení-lupiče-na-francouzské-ulici"
+                    ]
+                  },
+                  "specifikace": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "iri",
+                      "pattern": "^https://.*$",
+                      "examples": [
+                        "https://ofn.gov.cz/turistické-cíle/2020-07-01/"
+                      ]
+                    }
+                  },
+                  "dokumentace": {
+                    "description": "A page that provides additional information about the Data Service.",
+                    "type": "string",
+                    "format": "iri",
+                    "pattern": "^https://.*$",
+                    "examples": [
+                      "https://www.mdcr.cz/Dokumenty/Verejna-doprava/Jizdni-rady,-kalendare-pro-jizdni-rady,-metodi-(1)/Jizdni-rady-verejne-dopravy"
+                    ]
+                  },
+                  "právní_předpis": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "format": "iri",
+                      "pattern": "^http",
+                      "examples": [
+                        "http://data.europa.eu/eli/dir/2019/1024/oj",
+                        "https://www.e-sbirka.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_3a/odst_6",
+                        "https://www.e-sbirka.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_5a/odst_1",
+                        "http://data.europa.eu/eli/reg_impl/2023/138/oj"
+                      ]
+                    }
+                  },
+                  "kontaktní_bod": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "jméno": {
+                            "title": "Text",
+                            "type": "object",
+                            "additionalProperties": {
+                              "title": "Hodnota v jiném jazyce",
+                              "type": "string"
+                            },
+                            "properties": {
+                              "cs": {
+                                "title": "Hodnota v českém jazyce",
+                                "type": "string"
+                              },
+                              "en": {
+                                "title": "Hodnota v anglickém jazyce",
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "e-mail": {
+                            "description": "E-mailová adresa, na které lze navázat kontakt.",
+                            "type": "string",
+                            "format": "iri",
+                            "pattern": "^mailto:[^@]+@[^@]+",
+                            "examples": [
+                              "mailto:jan.novak@organizace.cz"
+                            ]
+                          },
+                          "kontaktní_stránka": {
+                            "title": "kontaktní stránka",
+                            "description": "Webová stránka, která buďto přímo umožňuje navázat kontakt, nebo obsahuje informace o tom, jak navázat kontakt.",
+                            "type": "string",
+                            "format": "iri",
+                            "pattern": "^https://.*$",
+                            "examples": [
+                              "https://www.mdcr.cz/Dokumenty/Verejna-doprava/Jizdni-rady,-kalendare-pro-jizdni-rady,-metodi-(1)/Jizdni-rady-verejne-dopravy"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "jméno": {
+                            "title": "Text",
+                            "type": "object",
+                            "additionalProperties": {
+                              "title": "Hodnota v jiném jazyce",
+                              "type": "string"
+                            },
+                            "properties": {
+                              "cs": {
+                                "title": "Hodnota v českém jazyce",
+                                "type": "string"
+                              },
+                              "en": {
+                                "title": "Hodnota v anglickém jazyce",
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "e-mail": {
+                            "description": "E-mailová adresa, na které lze navázat kontakt.",
+                            "type": "string",
+                            "format": "iri",
+                            "pattern": "^mailto:[^@]+@[^@]+",
+                            "examples": [
+                              "mailto:jan.novak@organizace.cz"
+                            ]
+                          },
+                          "kontaktní_stránka": {
+                            "title": "kontaktní stránka",
+                            "description": "Webová stránka, která buďto přímo umožňuje navázat kontakt, nebo obsahuje informace o tom, jak navázat kontakt.",
+                            "type": "string",
+                            "format": "iri",
+                            "pattern": "^https://.*$",
+                            "examples": [
+                              "https://www.mdcr.cz/Dokumenty/Verejna-doprava/Jizdni-rady,-kalendare-pro-jizdni-rady,-metodi-(1)/Jizdni-rady-verejne-dopravy"
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "vstupní_stránka": {
+      "type": "string",
+      "format": "iri",
+      "pattern": "^https://.*$",
+      "examples": [
+        "https://www.mdcr.cz/Dokumenty/Verejna-doprava/Jizdni-rady,-kalendare-pro-jizdni-rady,-metodi-(1)/Jizdni-rady-verejne-dopravy"
+      ]
+    }
+  }
+}

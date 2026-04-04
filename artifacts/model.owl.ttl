@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix prof: <http://www.w3.org/ns/dx/prof/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix : <https://example.com/ce3bk/#>.
+
+<https://example.com/ce3bk/#> a owl:Ontology, prof:Profile.
+:terribleMan a owl:Class, rdfs:Class;
+    rdfs:label "Terrible Man"@en;
+    rdfs:isDefinedBy <https://example.com/ce3bk/#>.
+:chubbyService a owl:Class, rdfs:Class;
+    rdfs:label "Chubby Service"@en;
+    rdfs:isDefinedBy <https://example.com/ce3bk/#>.
+:extensiveWork a rdf:Property, owl:ObjectProperty;
+    rdfs:label "Extensive Work"@en;
+    rdfs:isDefinedBy <https://example.com/ce3bk/#>;
+    rdfs:domain :chubbyService;
+    rdfs:range :terribleMan.
