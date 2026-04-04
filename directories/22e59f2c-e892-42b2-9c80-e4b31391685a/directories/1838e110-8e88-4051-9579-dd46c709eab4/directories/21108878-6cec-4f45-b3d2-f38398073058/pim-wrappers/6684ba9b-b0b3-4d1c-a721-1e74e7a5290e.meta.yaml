@@ -1,4 +1,4 @@
-iri: 8849e1e5-9e60-4628-82d4-cc9e6b61bcf6
+iri: dc293110-c668-472f-a798-ebf1fab4a9bd
 projectIri: 6684ba9b-b0b3-4d1c-a721-1e74e7a5290e
 types:
   - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
@@ -7,9 +7,9 @@ userMetadata:
   label:
     en: core-location-ap
 metadata:
-  creationDate: 2026-04-04T20:44:39.215Z
-  modificationDate: 2026-04-04T20:54:24.790Z
+  creationDate: 2026-04-04T21:00:44.589Z
+  modificationDate: 2026-04-04T21:01:29.335Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.422Z
+_exportedAt: 2026-04-04T21:03:52.857Z
 _exportedBy: http://localhost:3100

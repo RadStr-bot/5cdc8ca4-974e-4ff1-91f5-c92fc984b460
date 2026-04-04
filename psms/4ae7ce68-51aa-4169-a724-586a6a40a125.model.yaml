@@ -23,7 +23,7 @@ operations:
       - https://ofn.gov.cz/slovník/psm/SetHumanLabel
     iri: https://ofn.gov.cz/operation/1769096049671-a1c1-64b6-8e35
     parent: https://ofn.gov.cz/operation/1769096049644-faba-11d3-859a
-    dataPsmResource: b3d96f74-ea04-4029-a36a-34d47b7ebfd8
+    dataPsmResource: f75a733c-75be-4463-867c-087fe3f5c5bb
     dataPsmHumanLabel:
       en: Dataset Series
       cs: Série datových sad
@@ -32,7 +32,7 @@ operations:
       - https://ofn.gov.cz/slovník/psm/SetHumanDescription
     iri: https://ofn.gov.cz/operation/1769096049690-1f9c-b5da-933b
     parent: https://ofn.gov.cz/operation/1769096049671-a1c1-64b6-8e35
-    dataPsmResource: b3d96f74-ea04-4029-a36a-34d47b7ebfd8
+    dataPsmResource: f75a733c-75be-4463-867c-087fe3f5c5bb
     dataPsmHumanDescription:
       en: Data structure for Dataset Series. A collection of datasets that are
         published separately, but share some characteristics that group them.
@@ -45,14 +45,14 @@ operations:
       - https://ofn.gov.cz/slovník/psm/SetTechnicalLabel
     iri: https://ofn.gov.cz/operation/1769096081397-67e7-7f16-ae7e
     parent: https://ofn.gov.cz/operation/1769096049690-1f9c-b5da-933b
-    dataPsmResource: b3d96f74-ea04-4029-a36a-34d47b7ebfd8
+    dataPsmResource: f75a733c-75be-4463-867c-087fe3f5c5bb
     dataPsmTechnicalLabel: série-datových-sad
   - types:
       - core-operation
       - https://ofn.gov.cz/slovník/psm/SetJsonEnforceContext
     iri: https://ofn.gov.cz/operation/1769096081416-27bf-5667-8136
     parent: https://ofn.gov.cz/operation/1769096081397-67e7-7f16-ae7e
-    dataPsmEntity: b3d96f74-ea04-4029-a36a-34d47b7ebfd8
+    dataPsmEntity: f75a733c-75be-4463-867c-087fe3f5c5bb
     jsonEnforceContext: no
   - types:
       - core-operation
@@ -791,7 +791,7 @@ operations:
       - https://ofn.gov.cz/slovník/psm/SetJsonEnforceContext
     iri: https://ofn.gov.cz/operation/1769096570859-1d18-9201-9759
     parent: https://ofn.gov.cz/operation/1769096551484-101c-c4b9-8f83
-    dataPsmEntity: b3d96f74-ea04-4029-a36a-34d47b7ebfd8
+    dataPsmEntity: f75a733c-75be-4463-867c-087fe3f5c5bb
     jsonEnforceContext: with-extensions
   - types:
       - core-operation
@@ -803,10 +803,10 @@ operations:
     dataPsmTargetContainer: https://ofn.gov.cz/class/1769096049623-cfba-308d-af2f
     dataPsmMoveAfter: https://ofn.gov.cz/association/1769096135835-4c4c-dde7-9175
 resources:
-  b3d96f74-ea04-4029-a36a-34d47b7ebfd8:
+  f75a733c-75be-4463-867c-087fe3f5c5bb:
     types:
       - https://ofn.gov.cz/slovník/psm/Schema
-    iri: b3d96f74-ea04-4029-a36a-34d47b7ebfd8
+    iri: f75a733c-75be-4463-867c-087fe3f5c5bb
     dataPsmHumanLabel:
       en: Dataset Series
       cs: Série datových sad

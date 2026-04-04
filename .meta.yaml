@@ -1,4 +1,4 @@
-iri: 5cdc8ca4-974e-4ff1-91f5-c92fc984b460
+iri: 072f3f87-687e-4d9e-924e-40c42fa4ed17
 projectIri: 5cdc8ca4-974e-4ff1-91f5-c92fc984b460
 types:
   - http://dataspecer.com/resources/local/package
@@ -10,9 +10,9 @@ userMetadata:
     cs: Tato specifikace je určena pro popisování datových sad s vysokou hodnotou,
       tzv. High-Value Datasets
 metadata:
-  creationDate: 2026-04-04T20:44:35.223Z
-  modificationDate: 2026-04-04T20:54:32.944Z
+  creationDate: 2026-04-04T21:00:43.012Z
+  modificationDate: 2026-04-04T21:03:46.378Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.504Z
+_exportedAt: 2026-04-04T21:03:52.935Z
 _exportedBy: http://localhost:3100

@@ -1,4 +1,4 @@
-iri: 320cf658-05d2-4fdf-b855-a9c85849df7e
+iri: 07b40426-b015-4e20-9ee5-88325e4cbb57
 projectIri: 7a83fc75-a602-4760-8062-f9beb0683707
 types:
   - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
@@ -7,9 +7,9 @@ userMetadata:
   label:
     en: rdfs
 metadata:
-  creationDate: 2026-04-04T20:44:40.546Z
-  modificationDate: 2026-04-04T20:54:25.536Z
+  creationDate: 2026-04-04T21:00:45.171Z
+  modificationDate: 2026-04-04T21:01:29.881Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.427Z
+_exportedAt: 2026-04-04T21:03:52.860Z
 _exportedBy: http://localhost:3100

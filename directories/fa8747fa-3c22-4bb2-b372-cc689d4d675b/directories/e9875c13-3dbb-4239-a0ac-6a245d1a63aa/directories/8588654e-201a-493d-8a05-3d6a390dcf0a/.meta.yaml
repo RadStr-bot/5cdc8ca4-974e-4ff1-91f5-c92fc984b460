@@ -1,4 +1,4 @@
-iri: a98230de-34bb-4935-b95f-a9fadda2d916
+iri: d1193582-f3f8-4f02-870a-f73a4364063b
 projectIri: 8588654e-201a-493d-8a05-3d6a390dcf0a
 types:
   - http://dataspecer.com/resources/local/package
@@ -10,9 +10,9 @@ userMetadata:
   importedFromUrl: https://mff-uk.github.io/specifications/dcat-ap/
   documentBaseUrl: https://mff-uk.github.io/specifications/dcat-ap/
 metadata:
-  creationDate: 2026-04-04T20:44:46.746Z
-  modificationDate: 2026-04-04T20:54:32.151Z
+  creationDate: 2026-04-04T21:00:48.351Z
+  modificationDate: 2026-04-04T21:01:37.271Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.489Z
+_exportedAt: 2026-04-04T21:03:52.921Z
 _exportedBy: http://localhost:3100

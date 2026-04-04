@@ -1,4 +1,4 @@
-iri: 696bcb48-576e-4ec9-a194-7558188207e9
+iri: c5315fbb-806d-494b-969f-2c92232deb6b
 projectIri: 23990ea2-9ab7-43a8-ab9a-89db4c92682b
 types:
   - http://dataspecer.com/resources/local/package
@@ -10,9 +10,9 @@ userMetadata:
   importedFromUrl: https://ofn.gov.cz/dcat-ap-cz-podmínky-užití/2025-08-12/
   documentBaseUrl: https://ofn.gov.cz/dcat-ap-cz-podmínky-užití/2025-08-12/
 metadata:
-  creationDate: 2026-04-04T20:44:45.749Z
-  modificationDate: 2026-04-04T20:54:28.168Z
+  creationDate: 2026-04-04T21:00:47.695Z
+  modificationDate: 2026-04-04T21:01:32.668Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.460Z
+_exportedAt: 2026-04-04T21:03:52.892Z
 _exportedBy: http://localhost:3100

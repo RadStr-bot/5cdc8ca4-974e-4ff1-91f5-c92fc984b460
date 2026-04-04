@@ -1,4 +1,4 @@
-iri: 304e703f-3cbd-4ece-8b23-fb40cf78103a
+iri: 82b6362d-8efd-490b-a656-8adf14fae20b
 projectIri: 560e3ae0-8cdf-4b51-89ec-bc9c41564b6f
 types:
   - http://dataspecer.com/resources/local/visual-model
@@ -8,9 +8,9 @@ userMetadata:
   description:
     en: View model for the profile
 metadata:
-  creationDate: 2026-04-04T20:44:56.391Z
-  modificationDate: 2026-04-04T20:54:32.886Z
+  creationDate: 2026-04-04T21:00:52.875Z
+  modificationDate: 2026-04-04T21:01:38.417Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.503Z
+_exportedAt: 2026-04-04T21:03:52.934Z
 _exportedBy: http://localhost:3100

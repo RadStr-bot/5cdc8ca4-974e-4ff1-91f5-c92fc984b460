@@ -1,4 +1,4 @@
-iri: 0fb76523-ba8a-4427-955e-f0394fb92fd2
+iri: f9228266-00dd-44ec-bb56-d2c75e7c70f9
 projectIri: 86f15f1a-c69b-463c-b15a-3a24bdce1357
 types:
   - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
@@ -7,9 +7,9 @@ userMetadata:
   label:
     en: ns
 metadata:
-  creationDate: 2026-04-04T20:44:49.667Z
-  modificationDate: 2026-04-04T20:54:30.353Z
+  creationDate: 2026-04-04T21:00:49.732Z
+  modificationDate: 2026-04-04T21:01:35.207Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.477Z
+_exportedAt: 2026-04-04T21:03:52.911Z
 _exportedBy: http://localhost:3100

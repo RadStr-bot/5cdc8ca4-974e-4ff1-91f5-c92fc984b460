@@ -1,4 +1,4 @@
-iri: 6e148819-71e2-4b49-8d9d-4957e705ba2b
+iri: d85e215d-09e6-442a-83cd-b277c36d8544
 projectIri: 40b41704-67ec-4e32-b759-f74ff27603b1
 types:
   - https://dataspecer.com/core/model-descriptor/pim-store-wrapper
@@ -7,9 +7,9 @@ userMetadata:
   label:
     en: spdx-ontology
 metadata:
-  creationDate: 2026-04-04T20:44:49.304Z
-  modificationDate: 2026-04-04T20:54:30.242Z
+  creationDate: 2026-04-04T21:00:49.528Z
+  modificationDate: 2026-04-04T21:01:34.972Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.476Z
+_exportedAt: 2026-04-04T21:03:52.910Z
 _exportedBy: http://localhost:3100

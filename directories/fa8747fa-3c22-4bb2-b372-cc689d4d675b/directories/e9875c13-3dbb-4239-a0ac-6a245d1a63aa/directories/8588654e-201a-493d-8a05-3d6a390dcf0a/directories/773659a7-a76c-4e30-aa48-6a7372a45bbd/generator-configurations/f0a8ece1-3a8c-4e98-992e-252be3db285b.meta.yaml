@@ -1,12 +1,12 @@
-iri: ed5b00fb-3b79-4612-9e9c-506b42599c63
+iri: f2424cc5-c6bc-43e1-a242-ec84d08cea9f
 projectIri: f0a8ece1-3a8c-4e98-992e-252be3db285b
 types:
   - http://dataspecer.com/resources/v1/generator-configuration
 userMetadata: {}
 metadata:
-  creationDate: 2026-04-04T20:44:47.693Z
-  modificationDate: 2026-04-04T20:54:29.077Z
+  creationDate: 2026-04-04T21:00:48.452Z
+  modificationDate: 2026-04-04T21:00:48.564Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.468Z
+_exportedAt: 2026-04-04T21:03:52.903Z
 _exportedBy: http://localhost:3100

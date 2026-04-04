@@ -23,7 +23,7 @@ operations:
       - https://ofn.gov.cz/slovník/psm/SetHumanLabel
     iri: https://ofn.gov.cz/operation/1769095989077-d9c1-2364-ab24
     parent: https://ofn.gov.cz/operation/1769095989023-a89c-4047-8007
-    dataPsmResource: e258a4ee-b30c-4ba0-a7ee-6f93c263540d
+    dataPsmResource: 904e0f33-9187-4d44-ae41-724352eb2d6c
     dataPsmHumanLabel:
       en: Dataset
       cs: Datová sada
@@ -32,7 +32,7 @@ operations:
       - https://ofn.gov.cz/slovník/psm/SetHumanDescription
     iri: https://ofn.gov.cz/operation/1769095989130-7f45-ad88-9d63
     parent: https://ofn.gov.cz/operation/1769095989077-d9c1-2364-ab24
-    dataPsmResource: e258a4ee-b30c-4ba0-a7ee-6f93c263540d
+    dataPsmResource: 904e0f33-9187-4d44-ae41-724352eb2d6c
     dataPsmHumanDescription:
       en: Data structure for Dataset. A conceptual entity that represents the
         information published.
@@ -44,14 +44,14 @@ operations:
       - https://ofn.gov.cz/slovník/psm/SetTechnicalLabel
     iri: https://ofn.gov.cz/operation/1769096676399-e59c-cbe5-81e0
     parent: https://ofn.gov.cz/operation/1769095989130-7f45-ad88-9d63
-    dataPsmResource: e258a4ee-b30c-4ba0-a7ee-6f93c263540d
+    dataPsmResource: 904e0f33-9187-4d44-ae41-724352eb2d6c
     dataPsmTechnicalLabel: datová-sada
   - types:
       - core-operation
       - https://ofn.gov.cz/slovník/psm/SetJsonLdDefinedTypeMapping
     iri: https://ofn.gov.cz/operation/1769096676428-58b4-ecb7-a0f8
     parent: https://ofn.gov.cz/operation/1769096676399-e59c-cbe5-81e0
-    dataPsmEntity: e258a4ee-b30c-4ba0-a7ee-6f93c263540d
+    dataPsmEntity: 904e0f33-9187-4d44-ae41-724352eb2d6c
     jsonLdDefinedTypeMapping:
       http://www.w3.org/ns/dcat#Dataset: Datová sada
       http://www.w3.org/ns/dcat#Distribution: Distribuce
@@ -62,7 +62,7 @@ operations:
       - https://ofn.gov.cz/slovník/psm/SetJsonEnforceContext
     iri: https://ofn.gov.cz/operation/1769096676461-dba6-f8bb-ab00
     parent: https://ofn.gov.cz/operation/1769096676428-58b4-ecb7-a0f8
-    dataPsmEntity: e258a4ee-b30c-4ba0-a7ee-6f93c263540d
+    dataPsmEntity: 904e0f33-9187-4d44-ae41-724352eb2d6c
     jsonEnforceContext: no
   - types:
       - core-operation
@@ -2131,10 +2131,10 @@ operations:
     dataPsmResource: https://ofn.gov.cz/association/1769097226750-25b9-572f-aae6
     dataPsmTechnicalLabel: soubor_ke_stažení
 resources:
-  e258a4ee-b30c-4ba0-a7ee-6f93c263540d:
+  904e0f33-9187-4d44-ae41-724352eb2d6c:
     types:
       - https://ofn.gov.cz/slovník/psm/Schema
-    iri: e258a4ee-b30c-4ba0-a7ee-6f93c263540d
+    iri: 904e0f33-9187-4d44-ae41-724352eb2d6c
     dataPsmHumanLabel:
       en: Dataset
       cs: Datová sada

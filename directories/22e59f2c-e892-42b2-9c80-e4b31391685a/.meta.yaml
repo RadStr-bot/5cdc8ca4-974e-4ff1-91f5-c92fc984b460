@@ -1,4 +1,4 @@
-iri: d0caf1ab-5078-4a43-bb40-3be183995aa6
+iri: ea8a7f62-5740-48e3-9797-efad73c56c9f
 projectIri: 22e59f2c-e892-42b2-9c80-e4b31391685a
 types:
   - http://dataspecer.com/resources/local/package
@@ -9,9 +9,9 @@ userMetadata:
   importedFromUrl: https://mff-uk.github.io/specifications/dcat-ap-hvd/
   documentBaseUrl: https://mff-uk.github.io/specifications/dcat-ap-hvd/
 metadata:
-  creationDate: 2026-04-04T20:44:35.365Z
-  modificationDate: 2026-04-04T20:54:27.503Z
+  creationDate: 2026-04-04T21:00:43.143Z
+  modificationDate: 2026-04-04T21:01:31.504Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.444Z
+_exportedAt: 2026-04-04T21:03:52.881Z
 _exportedBy: http://localhost:3100

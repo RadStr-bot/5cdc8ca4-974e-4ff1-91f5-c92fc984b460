@@ -1,5 +1,5 @@
 type: http://dataspecer.com/resources/local/semantic-model
-modelId: ffa4ae27-56e5-4a34-811d-d0e823479d6f
+modelId: c3ca010e-d143-437f-aba8-80edef4cee1d
 modelAlias: "DCAT-AP-CZ: Basic data model for data catalogs"
 baseIri: https://ofn.gov.cz/dcat-ap-cz#
 entities:

@@ -1,5 +1,9 @@
+identifier: a97f2835-2f7a-4cb3-bee5-7a4356c70765
+version: 1
 type: http://dataspecer.com/resources/local/visual-model
-modelId: a0570fd4-0c2f-48e6-aabe-792a478eaed1
-visualEntities: {}
-modelColors:
-  vhfk9: "#ffd670"
+entities:
+  - identifier: a97f2835-2f7a-4cb3-bee5-7a4356c70765-model-metadata-entity
+    type:
+      - entity-model-type
+    label:
+      en: Anonymous model

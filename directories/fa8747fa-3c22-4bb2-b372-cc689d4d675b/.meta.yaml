@@ -1,4 +1,4 @@
-iri: 7917e652-f797-4125-9f98-ea7f65bcd994
+iri: 21d2d458-8dd7-4dfc-b1c8-4fe378a759d1
 projectIri: fa8747fa-3c22-4bb2-b372-cc689d4d675b
 types:
   - http://dataspecer.com/resources/local/package
@@ -9,9 +9,9 @@ userMetadata:
   importedFromUrl: https://ofn.gov.cz/dcat-ap-cz-otevřená-data/draft/cs/
   documentBaseUrl: https://ofn.gov.cz/dcat-ap-cz-otevřená-data/draft/cs/
 metadata:
-  creationDate: 2026-04-04T20:44:45.661Z
-  modificationDate: 2026-04-04T20:54:32.504Z
+  creationDate: 2026-04-04T21:00:47.620Z
+  modificationDate: 2026-04-04T21:01:37.281Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.494Z
+_exportedAt: 2026-04-04T21:03:52.924Z
 _exportedBy: http://localhost:3100

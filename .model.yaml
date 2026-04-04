@@ -1478,7 +1478,7 @@ configuration:
     exportVersion: 2
 modelCompositionConfiguration:
   modelType: application-profile
-  model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
   canAddEntities: false
   canModify: true
   profiles:

@@ -1,4 +1,4 @@
-iri: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+iri: 7054ae23-0817-4b21-94bd-a46858619bcd
 projectIri: ce3bk
 types:
   - http://dataspecer.com/resources/local/semantic-model
@@ -6,9 +6,9 @@ userMetadata:
   label:
     en: moje
 metadata:
-  creationDate: 2026-04-04T20:44:56.276Z
-  modificationDate: 2026-04-04T20:54:32.817Z
+  creationDate: 2026-04-04T21:00:52.797Z
+  modificationDate: 2026-04-04T21:01:24.623Z
 _version: 1
 _exportVersion: 2
-_exportedAt: 2026-04-04T20:54:37.502Z
+_exportedAt: 2026-04-04T21:03:52.929Z
 _exportedBy: http://localhost:3100

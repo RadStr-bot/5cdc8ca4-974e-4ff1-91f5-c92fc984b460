@@ -1,4 +1,4 @@
-identifier: 304e703f-3cbd-4ece-8b23-fb40cf78103a
+identifier: 82b6362d-8efd-490b-a656-8adf14fae20b
 version: 1
 type: http://dataspecer.com/resources/local/visual-model
 entities:
@@ -8,7 +8,7 @@ entities:
     label:
       en: "DCAT-AP-CZ: High-Value Datasets"
       cs: "DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)"
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: yl7okomh8nmke21fm0
     position:
       x: 2020
@@ -24,7 +24,7 @@ entities:
     type:
       - visual-node
     identifier: 247og
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: 4ql0akde4lymke21fm0
     position:
       x: 1530
@@ -40,7 +40,7 @@ entities:
     type:
       - visual-node
     identifier: fyxbfl
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: 0fhh7c3vmfxmke21fm0
     position:
       x: 2550
@@ -55,7 +55,7 @@ entities:
     type:
       - visual-node
     identifier: zliwk
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: ah3xwvwfsvtmke21fm0
     position:
       x: 2020
@@ -68,7 +68,7 @@ entities:
     type:
       - visual-node
     identifier: dg2t1
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: zel3qia7aqlmke21gdl
     waypoints: []
     visualSource: 247og
@@ -76,7 +76,7 @@ entities:
     type:
       - visual-relationship
     identifier: 5p6yi
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: l36aribzwgmke21fm0
     position:
       x: 1380
@@ -87,7 +87,7 @@ entities:
     type:
       - visual-node
     identifier: vdnqr
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: q6gooiipoekmke21gdl
     waypoints: []
     visualSource: vdnqr
@@ -95,7 +95,7 @@ entities:
     type:
       - visual-relationship
     identifier: y6y46
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: f8kftaq3sznmke21hbt
     waypoints: []
     visualSource: vdnqr
@@ -103,7 +103,7 @@ entities:
     type:
       - visual-relationship
     identifier: ps7sm
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: 9rus9qdsi2amke21fm0
     position:
       x: 2410
@@ -116,7 +116,7 @@ entities:
     type:
       - visual-node
     identifier: u5ekf
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: uosfxc7z2ismke21hbt
     waypoints: []
     visualSource: u5ekf
@@ -124,7 +124,7 @@ entities:
     type:
       - visual-relationship
     identifier: pc6i1
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: nzt51wot6dmke21fm0
     position:
       x: 1380
@@ -135,7 +135,7 @@ entities:
     type:
       - visual-node
     identifier: olzui
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: e09wtdqevbsmke21gdl
     waypoints: []
     visualSource: dg2t1
@@ -143,7 +143,7 @@ entities:
     type:
       - visual-relationship
     identifier: rubwx
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: gcdmqeetnskmke21fm0
     position:
       x: 3000
@@ -154,7 +154,7 @@ entities:
     type:
       - visual-node
     identifier: ztcgs
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: vzm8fgbytdmmke21fm0
     position:
       x: 2620
@@ -165,7 +165,7 @@ entities:
     type:
       - visual-node
     identifier: cz23gj
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: sblnhao9fwmke21fm0
     position:
       x: 2700
@@ -179,7 +179,7 @@ entities:
     type:
       - visual-node
     identifier: ez5ho
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: bzzc8hin8rnmke21hbt
     waypoints: []
     visualSource: cz23gj
@@ -187,7 +187,7 @@ entities:
     type:
       - visual-relationship
     identifier: 8odb
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: gkjuy6f8i7hmke21hbt
     waypoints: []
     visualSource: ztcgs
@@ -195,7 +195,7 @@ entities:
     type:
       - visual-relationship
     identifier: 9obhf
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: mgl0s4z5bxkmkpk27wp
     position:
       x: 1760
@@ -206,7 +206,7 @@ entities:
     type:
       - visual-node
     identifier: zq2yci
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: x428l4zgvvrmkpk7xhh
     waypoints: []
     visualSource: 247og
@@ -214,7 +214,7 @@ entities:
     type:
       - visual-relationship
     identifier: 1si85l
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: tm7v6gbri5mkpk8z55
     waypoints: []
     visualSource: zliwk
@@ -222,7 +222,7 @@ entities:
     type:
       - visual-relationship
     identifier: q3y2q
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: wtml0jmk3dmkpk9suj
     waypoints: []
     visualSource: fyxbfl
@@ -230,7 +230,7 @@ entities:
     type:
       - visual-relationship
     identifier: z2yqsh
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedEntity: xnnyc3idphmkpkokub
     position:
       x: 2050
@@ -241,7 +241,7 @@ entities:
     type:
       - visual-node
     identifier: b9eje
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: we2l7lgqx9mkpkqy5l
     waypoints: []
     visualSource: olzui
@@ -249,7 +249,7 @@ entities:
     type:
       - visual-relationship
     identifier: 4jmall
-  - model: 420a1415-4ef9-4b5c-aaba-3cf2c23ab74b
+  - model: 81a5d2f6-534a-4357-97f6-aa9f70b92474
     representedRelationship: h0j6xc8tb4qmkpkt84y
     waypoints: []
     visualSource: olzui
@@ -259,10 +259,10 @@ entities:
     identifier: d3zzx
   - type:
       - http://dataspecer.com/resources/local/visual-model
-    representedModel: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+    representedModel: 7054ae23-0817-4b21-94bd-a46858619bcd
     color: "#ff848b"
     identifier: ug2at
-  - model: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+  - model: 7054ae23-0817-4b21-94bd-a46858619bcd
     representedEntity: 0w60qwe8usnmmshu1ve
     position:
       x: 1140
@@ -273,7 +273,7 @@ entities:
     type:
       - visual-node
     identifier: 649hff
-  - model: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+  - model: 7054ae23-0817-4b21-94bd-a46858619bcd
     representedEntity: 0w60qwe8usnmmshu1ve
     position:
       x: 1570
@@ -284,7 +284,7 @@ entities:
     type:
       - visual-node
     identifier: wxcgw
-  - model: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+  - model: 7054ae23-0817-4b21-94bd-a46858619bcd
     representedEntity: wk85gf2midmmshuryu
     position:
       x: 1420
@@ -295,7 +295,7 @@ entities:
     type:
       - visual-node
     identifier: 36hgh
-  - model: 2533c7bb-c13f-464e-b9cc-eaa7026dcd8f
+  - model: 7054ae23-0817-4b21-94bd-a46858619bcd
     representedRelationship: 67u6njnabvimmshv3zi
     waypoints: []
     visualSource: 36hgh
@@ -303,3 +303,71 @@ entities:
     type:
       - visual-relationship
     identifier: rq02m
+  - model: 3a86ce50-1456-404f-b82e-9f34196fc33d
+    representedEntity: https://mff-uk.github.io/specifications/dcat-dap#Geometry
+    position:
+      x: 2190
+      y: 490
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: 6azn6
+  - model: 39db5276-4ffa-497f-9dcc-165585189e4c
+    representedEntity: http://www.w3.org/ns/locn#Geometry
+    position:
+      x: 2800
+      y: 280
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: pweq5
+  - model: 3a86ce50-1456-404f-b82e-9f34196fc33d
+    entity: https://mff-uk.github.io/specifications/dcat-dap#Geometry
+    waypoints: []
+    visualSource: 6azn6
+    visualTarget: pweq5
+    type:
+      - visual-profile-relationship
+    identifier: 6l65n
+  - model: 54d63640-934b-49f2-acf0-ec5f0c4c3e30
+    representedEntity: https://mff-uk.github.io/specifications/dcat-ap#Geometry
+    position:
+      x: 1830
+      y: 100
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: 3fh57
+  - model: 54d63640-934b-49f2-acf0-ec5f0c4c3e30
+    entity: https://mff-uk.github.io/specifications/dcat-ap#Geometry
+    waypoints: []
+    visualSource: 3fh57
+    visualTarget: 6azn6
+    type:
+      - visual-profile-relationship
+    identifier: 7gmfr
+  - model: 3a86ce50-1456-404f-b82e-9f34196fc33d
+    representedEntity: https://mff-uk.github.io/specifications/dcat-dap#Location
+    position:
+      x: 2390
+      y: 0
+      anchored: null
+    content: []
+    visualModels: []
+    type:
+      - visual-node
+    identifier: 8p4vi
+  - representedRelationship: https://mff-uk.github.io/specifications/dcat-dap#Location.geometry
+    model: 3a86ce50-1456-404f-b82e-9f34196fc33d
+    waypoints: []
+    visualSource: 8p4vi
+    visualTarget: 6azn6
+    type:
+      - visual-relationship
+    identifier: lf9yd
