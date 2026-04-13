@@ -5,7 +5,7 @@
 <https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/> a dsvs:structure-entity;
     kv:dataPsmHumanDescription "{\"en\":\"Data structure for Dataset Series. A collection of datasets that are published separately, but share some characteristics that group them.\",\"cs\":\"Datová struktura pro Série datových sad. Série datových sad zastřešuje související datové sady a jiné série. Souvislost může být časová (rozpočet v letech), prostorová (seznamy ulic v obcích) či tématická (datové sady z jednoho systému).\"}";
     kv:dataPsmHumanLabel "{\"en\":\"Dataset Series\",\"cs\":\"Série datových sad\"}";
-    kv:dataPsmParts "[\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096049623-cfba-308d-af2f\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096135197-9b58-c546-ab2b\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096135217-d162-db3d-a444\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135240-df28-4066-bdf0\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135257-2cfa-e243-8871\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135282-0adf-de3f-8723\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135307-97c3-9321-90c6\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135336-ea07-1722-afc3\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135372-a33a-041e-963d\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135413-cb9a-4755-ae95\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135441-eb93-76e9-9fbb\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135470-94c9-0648-a454\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135496-890f-a004-beed\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135522-6cab-c5e6-909d\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135545-1e23-522c-8366\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135578-d680-e963-86e2\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135610-a6bd-fef3-9933\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135665-0d01-b9a4-8e0b\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135699-a35e-71e5-9594\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135738-534e-77eb-909f\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135773-1e21-a1da-976c\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135806-7ab2-c74e-b7bd\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135835-4c4c-dde7-9175\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135867-37fb-7c29-abc7\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135898-13be-9ef3-a1b0\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135933-6778-5a69-8f60\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135963-67c7-e4e1-9ef5\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096136000-cf9a-446a-95a4\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096136040-06b9-70ee-b70f\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096136091-ef24-2244-ac61\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096312915-14ae-ab0a-b264\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096312959-57f4-ef13-8215\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096412721-11dd-f6d4-8df5\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096412770-a2ec-fc11-9f5e\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096412814-0345-58ca-abf5\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096412862-49ca-20f0-9597\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096412911-4e7b-5514-bbba\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/or-1769096499585-5b75-86d4-b6d2\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096499649-eca7-3054-8545\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/include-1769096499715-9028-bf99-880d\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096502813-33ef-9a22-8e65\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/include-1769096502873-88a7-44cc-8488\"]";
+    kv:dataPsmParts "[\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096049623-cfba-308d-af2f\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096135197-9b58-c546-ab2b\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096135217-d162-db3d-a444\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135240-df28-4066-bdf0\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135257-2cfa-e243-8871\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135282-0adf-de3f-8723\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135307-97c3-9321-90c6\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135336-ea07-1722-afc3\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135372-a33a-041e-963d\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135413-cb9a-4755-ae95\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135441-eb93-76e9-9fbb\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135470-94c9-0648-a454\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135496-890f-a004-beed\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135522-6cab-c5e6-909d\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135545-1e23-522c-8366\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135578-d680-e963-86e2\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135610-a6bd-fef3-9933\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135665-0d01-b9a4-8e0b\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135699-a35e-71e5-9594\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135738-534e-77eb-909f\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135773-1e21-a1da-976c\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135806-7ab2-c74e-b7bd\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135835-4c4c-dde7-9175\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135867-37fb-7c29-abc7\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135898-13be-9ef3-a1b0\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135933-6778-5a69-8f60\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135963-67c7-e4e1-9ef5\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096136000-cf9a-446a-95a4\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096136040-06b9-70ee-b70f\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096136091-ef24-2244-ac61\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096312915-14ae-ab0a-b264\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096312959-57f4-ef13-8215\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096412721-11dd-f6d4-8df5\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096412770-a2ec-fc11-9f5e\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096412814-0345-58ca-abf5\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096412862-49ca-20f0-9597\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096412911-4e7b-5514-bbba\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/or-1769096499585-5b75-86d4-b6d2\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096499649-eca7-3054-8545\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/include-1769096499715-9028-bf99-880d\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096502813-33ef-9a22-8e65\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/include-1769096502873-88a7-44cc-8488\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1776066709098-feed-b17a-bf2f\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1776066709245-bb90-2ae6-b6bd\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1776066709324-8d99-dc25-b982\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1776066709387-96ce-18d8-b8ee\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1776066709453-b142-ae25-86f4\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1776066709513-4bda-7123-a030\"]";
     kv:dataPsmRoots "[\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096049623-cfba-308d-af2f\"]";
     kv:dataPsmTechnicalLabel "\"série-datových-sad\"";
     kv:iri "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/\"";
@@ -63,7 +63,7 @@
     kv:dataPsmHumanLabel "null";
     kv:dataPsmInterpretation "\"https://ofn.gov.cz/dcat-ap-cz-hvd#KontaktníBod\"";
     kv:dataPsmIsClosed "null";
-    kv:dataPsmParts "[\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096412721-11dd-f6d4-8df5\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096412911-4e7b-5514-bbba\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096412814-0345-58ca-abf5\"]";
+    kv:dataPsmParts "[\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/attribute-1769096412721-11dd-f6d4-8df5\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096412911-4e7b-5514-bbba\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096412814-0345-58ca-abf5\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1776066709245-bb90-2ae6-b6bd\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1776066709387-96ce-18d8-b8ee\",\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1776066709513-4bda-7123-a030\"]";
     kv:dataPsmTechnicalLabel "\"kontaktní_bod\"";
     kv:iri "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135282-0adf-de3f-8723\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
@@ -214,7 +214,7 @@
     kv:dataPsmIsDematerialize "null";
     kv:dataPsmIsReverse "false";
     kv:dataPsmPart "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135738-534e-77eb-909f\"";
-    kv:dataPsmTechnicalLabel "\"geografické_území\"";
+    kv:dataPsmTechnicalLabel "\"geografické_územícd\"";
     kv:iri "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1769096135773-1e21-a1da-976c\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/AssociationEnd\"]".
 :class-1769096135806-7ab2-c74e-b7bd a dsvs:structure-entity;
@@ -410,3 +410,63 @@
     kv:dataPsmIncludes "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1769096135282-0adf-de3f-8723\"";
     kv:iri "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/include-1769096502873-88a7-44cc-8488\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/Include\"]".
+:class-1776066709098-feed-b17a-bf2f a dsvs:structure-entity;
+    kv:dataPsmExtends "[]";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://ofn.gov.cz/dcat-ap-cz-hvd#E-mailAddress\"";
+    kv:dataPsmIsClosed "null";
+    kv:dataPsmParts "[]";
+    kv:dataPsmTechnicalLabel "null";
+    kv:iri "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1776066709098-feed-b17a-bf2f\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
+:associationEnd-1776066709245-bb90-2ae6-b6bd a dsvs:structure-entity;
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://ofn.gov.cz/dcat-ap-cz-otevřená-data#KontaktníBod.email\"";
+    kv:dataPsmIsDematerialize "null";
+    kv:dataPsmIsReverse "false";
+    kv:dataPsmPart "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1776066709098-feed-b17a-bf2f\"";
+    kv:dataPsmTechnicalLabel "null";
+    kv:iri "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1776066709245-bb90-2ae6-b6bd\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/AssociationEnd\"]".
+:class-1776066709324-8d99-dc25-b982 a dsvs:structure-entity;
+    kv:dataPsmExtends "[]";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://ofn.gov.cz/dcat-ap-cz-hvd#SérieDatovýchSad\"";
+    kv:dataPsmIsClosed "null";
+    kv:dataPsmParts "[]";
+    kv:dataPsmTechnicalLabel "null";
+    kv:iri "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1776066709324-8d99-dc25-b982\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
+:associationEnd-1776066709387-96ce-18d8-b8ee a dsvs:structure-entity;
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://ofn.gov.cz/dcat-ap-cz-otevřená-data#SérieDatovýchSad.kontaktníBod\"";
+    kv:dataPsmIsDematerialize "null";
+    kv:dataPsmIsReverse "true";
+    kv:dataPsmPart "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1776066709324-8d99-dc25-b982\"";
+    kv:dataPsmTechnicalLabel "null";
+    kv:iri "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1776066709387-96ce-18d8-b8ee\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/AssociationEnd\"]".
+:class-1776066709453-b142-ae25-86f4 a dsvs:structure-entity;
+    kv:dataPsmExtends "[]";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://ofn.gov.cz/dcat-ap-cz-hvd#DatováSada\"";
+    kv:dataPsmIsClosed "null";
+    kv:dataPsmParts "[]";
+    kv:dataPsmTechnicalLabel "null";
+    kv:iri "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1776066709453-b142-ae25-86f4\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
+:associationEnd-1776066709513-4bda-7123-a030 a dsvs:structure-entity;
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://ofn.gov.cz/dcat-ap-cz-otevřená-data#DatováSada.kontaktníBod\"";
+    kv:dataPsmIsDematerialize "null";
+    kv:dataPsmIsReverse "true";
+    kv:dataPsmPart "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/class-1776066709453-b142-ae25-86f4\"";
+    kv:dataPsmTechnicalLabel "null";
+    kv:iri "\"https://ofn.gov.cz/dcat-ap-cz-hvd/#structure-model/série-datových-sad/associationEnd-1776066709513-4bda-7123-a030\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/AssociationEnd\"]".

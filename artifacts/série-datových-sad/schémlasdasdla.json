@@ -145,7 +145,7 @@
         }
       }
     },
-    "geografické_území": {
+    "geografické_územícd": {
       "type": "array",
       "items": {
         "type": "string",
@@ -229,6 +229,13 @@
               "examples": [
                 "https://www.mdcr.cz/Dokumenty/Verejna-doprava/Jizdni-rady,-kalendare-pro-jizdni-rady,-metodi-(1)/Jizdni-rady-verejne-dopravy"
               ]
+            },
+            "null": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "iri"
+              }
             }
           }
         },
@@ -271,6 +278,13 @@
               "examples": [
                 "https://www.mdcr.cz/Dokumenty/Verejna-doprava/Jizdni-rady,-kalendare-pro-jizdni-rady,-metodi-(1)/Jizdni-rady-verejne-dopravy"
               ]
+            },
+            "null": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "iri"
+              }
             }
           }
         }
