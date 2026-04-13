@@ -802,6 +802,91 @@ operations:
     dataPsmProperty: https://ofn.gov.cz/attribute/1769096312959-57f4-ef13-8215
     dataPsmTargetContainer: https://ofn.gov.cz/class/1769096049623-cfba-308d-af2f
     dataPsmMoveAfter: https://ofn.gov.cz/association/1769096135835-4c4c-dde7-9175
+  - types:
+      - core-operation
+      - https://ofn.gov.cz/slovník/psm/SetTechnicalLabel
+    iri: https://ofn.gov.cz/operation/1776066691559-a7fa-b062-a0e5
+    parent: https://ofn.gov.cz/operation/1773623710410-b23b-1186-8228
+    dataPsmResource: https://ofn.gov.cz/association/1769096135773-1e21-a1da-976c
+    dataPsmTechnicalLabel: geografické_územícd
+  - types:
+      - core-operation
+      - https://ofn.gov.cz/slovník/psm/CreateClass
+    iri: https://ofn.gov.cz/operation/1776066709099-6dd7-a722-8691
+    parent: https://ofn.gov.cz/operation/1776066691559-a7fa-b062-a0e5
+    dataPsmNewIri: null
+    dataPsmInterpretation: i9tyznddysmke21fm0
+    dataPsmTechnicalLabel: null
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmExtends: []
+    dataPsmIsClosed: null
+  - types:
+      - core-operation
+      - https://ofn.gov.cz/slovník/psm/CreateAssociationEnd
+    iri: https://ofn.gov.cz/operation/1776066709245-6d68-5fc9-9f55
+    parent: https://ofn.gov.cz/operation/1776066709099-6dd7-a722-8691
+    dataPsmNewIri: null
+    dataPsmInterpretation: id8xlwf5h5bmke21gdl
+    dataPsmTechnicalLabel: null
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmOwner: https://ofn.gov.cz/class/1769096135282-0adf-de3f-8723
+    dataPsmPart: https://ofn.gov.cz/class/1776066709098-feed-b17a-bf2f
+    dataPsmIsReverse: false
+    dataPsmIsDematerialize: null
+  - types:
+      - core-operation
+      - https://ofn.gov.cz/slovník/psm/CreateClass
+    iri: https://ofn.gov.cz/operation/1776066709325-68cb-8b11-a042
+    parent: https://ofn.gov.cz/operation/1776066709245-6d68-5fc9-9f55
+    dataPsmNewIri: null
+    dataPsmInterpretation: 0fhh7c3vmfxmke21fm0
+    dataPsmTechnicalLabel: null
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmExtends: []
+    dataPsmIsClosed: null
+  - types:
+      - core-operation
+      - https://ofn.gov.cz/slovník/psm/CreateAssociationEnd
+    iri: https://ofn.gov.cz/operation/1776066709387-0064-d246-8820
+    parent: https://ofn.gov.cz/operation/1776066709325-68cb-8b11-a042
+    dataPsmNewIri: null
+    dataPsmInterpretation: npv8njn2nlsmke21gdl
+    dataPsmTechnicalLabel: null
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmOwner: https://ofn.gov.cz/class/1769096135282-0adf-de3f-8723
+    dataPsmPart: https://ofn.gov.cz/class/1776066709324-8d99-dc25-b982
+    dataPsmIsReverse: true
+    dataPsmIsDematerialize: null
+  - types:
+      - core-operation
+      - https://ofn.gov.cz/slovník/psm/CreateClass
+    iri: https://ofn.gov.cz/operation/1776066709454-88ef-6a02-8296
+    parent: https://ofn.gov.cz/operation/1776066709387-0064-d246-8820
+    dataPsmNewIri: null
+    dataPsmInterpretation: yl7okomh8nmke21fm0
+    dataPsmTechnicalLabel: null
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmExtends: []
+    dataPsmIsClosed: null
+  - types:
+      - core-operation
+      - https://ofn.gov.cz/slovník/psm/CreateAssociationEnd
+    iri: https://ofn.gov.cz/operation/1776066709513-8b3a-95dd-ad2f
+    parent: https://ofn.gov.cz/operation/1776066709454-88ef-6a02-8296
+    dataPsmNewIri: null
+    dataPsmInterpretation: q4s9jt8j71bmke21gdl
+    dataPsmTechnicalLabel: null
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmOwner: https://ofn.gov.cz/class/1769096135282-0adf-de3f-8723
+    dataPsmPart: https://ofn.gov.cz/class/1776066709453-b142-ae25-86f4
+    dataPsmIsReverse: true
+    dataPsmIsDematerialize: null
 resources:
   f75a733c-75be-4463-867c-087fe3f5c5bb:
     types:
@@ -863,6 +948,12 @@ resources:
       - https://ofn.gov.cz/include/1769096499715-9028-bf99-880d
       - https://ofn.gov.cz/class/1769096502813-33ef-9a22-8e65
       - https://ofn.gov.cz/include/1769096502873-88a7-44cc-8488
+      - https://ofn.gov.cz/class/1776066709098-feed-b17a-bf2f
+      - https://ofn.gov.cz/association/1776066709245-bb90-2ae6-b6bd
+      - https://ofn.gov.cz/class/1776066709324-8d99-dc25-b982
+      - https://ofn.gov.cz/association/1776066709387-96ce-18d8-b8ee
+      - https://ofn.gov.cz/class/1776066709453-b142-ae25-86f4
+      - https://ofn.gov.cz/association/1776066709513-4bda-7123-a030
     jsonEnforceContext: with-extensions
   https://ofn.gov.cz/class/1769096049623-cfba-308d-af2f:
     types:
@@ -946,6 +1037,9 @@ resources:
       - https://ofn.gov.cz/attribute/1769096412721-11dd-f6d4-8df5
       - https://ofn.gov.cz/association/1769096412911-4e7b-5514-bbba
       - https://ofn.gov.cz/association/1769096412814-0345-58ca-abf5
+      - https://ofn.gov.cz/association/1776066709245-bb90-2ae6-b6bd
+      - https://ofn.gov.cz/association/1776066709387-96ce-18d8-b8ee
+      - https://ofn.gov.cz/association/1776066709513-4bda-7123-a030
     dataPsmIsClosed: null
   https://ofn.gov.cz/association/1769096135307-97c3-9321-90c6:
     types:
@@ -1107,7 +1201,7 @@ resources:
     iri: https://ofn.gov.cz/association/1769096135773-1e21-a1da-976c
     dataPsmHumanLabel: null
     dataPsmHumanDescription: null
-    dataPsmTechnicalLabel: geografické_území
+    dataPsmTechnicalLabel: geografické_územícd
     dataPsmInterpretation: lxne0xdk4tmke21gdl
     dataPsmPart: https://ofn.gov.cz/class/1769096135738-534e-77eb-909f
     dataPsmIsReverse: false
@@ -1332,3 +1426,69 @@ resources:
       - https://ofn.gov.cz/slovník/psm/Include
     iri: https://ofn.gov.cz/include/1769096502873-88a7-44cc-8488
     dataPsmIncludes: https://ofn.gov.cz/class/1769096135282-0adf-de3f-8723
+  https://ofn.gov.cz/class/1776066709098-feed-b17a-bf2f:
+    types:
+      - https://ofn.gov.cz/slovník/psm/Class
+    iri: https://ofn.gov.cz/class/1776066709098-feed-b17a-bf2f
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmTechnicalLabel: null
+    dataPsmInterpretation: i9tyznddysmke21fm0
+    dataPsmExtends: []
+    dataPsmParts: []
+    dataPsmIsClosed: null
+  https://ofn.gov.cz/association/1776066709245-bb90-2ae6-b6bd:
+    types:
+      - https://ofn.gov.cz/slovník/psm/AssociationEnd
+    iri: https://ofn.gov.cz/association/1776066709245-bb90-2ae6-b6bd
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmTechnicalLabel: null
+    dataPsmInterpretation: id8xlwf5h5bmke21gdl
+    dataPsmPart: https://ofn.gov.cz/class/1776066709098-feed-b17a-bf2f
+    dataPsmIsReverse: false
+    dataPsmIsDematerialize: null
+  https://ofn.gov.cz/class/1776066709324-8d99-dc25-b982:
+    types:
+      - https://ofn.gov.cz/slovník/psm/Class
+    iri: https://ofn.gov.cz/class/1776066709324-8d99-dc25-b982
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmTechnicalLabel: null
+    dataPsmInterpretation: 0fhh7c3vmfxmke21fm0
+    dataPsmExtends: []
+    dataPsmParts: []
+    dataPsmIsClosed: null
+  https://ofn.gov.cz/association/1776066709387-96ce-18d8-b8ee:
+    types:
+      - https://ofn.gov.cz/slovník/psm/AssociationEnd
+    iri: https://ofn.gov.cz/association/1776066709387-96ce-18d8-b8ee
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmTechnicalLabel: null
+    dataPsmInterpretation: npv8njn2nlsmke21gdl
+    dataPsmPart: https://ofn.gov.cz/class/1776066709324-8d99-dc25-b982
+    dataPsmIsReverse: true
+    dataPsmIsDematerialize: null
+  https://ofn.gov.cz/class/1776066709453-b142-ae25-86f4:
+    types:
+      - https://ofn.gov.cz/slovník/psm/Class
+    iri: https://ofn.gov.cz/class/1776066709453-b142-ae25-86f4
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmTechnicalLabel: null
+    dataPsmInterpretation: yl7okomh8nmke21fm0
+    dataPsmExtends: []
+    dataPsmParts: []
+    dataPsmIsClosed: null
+  https://ofn.gov.cz/association/1776066709513-4bda-7123-a030:
+    types:
+      - https://ofn.gov.cz/slovník/psm/AssociationEnd
+    iri: https://ofn.gov.cz/association/1776066709513-4bda-7123-a030
+    dataPsmHumanLabel: null
+    dataPsmHumanDescription: null
+    dataPsmTechnicalLabel: null
+    dataPsmInterpretation: q4s9jt8j71bmke21gdl
+    dataPsmPart: https://ofn.gov.cz/class/1776066709453-b142-ae25-86f4
+    dataPsmIsReverse: true
+    dataPsmIsDematerialize: null
